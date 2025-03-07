@@ -1,0 +1,30 @@
+[
+  {
+    "name":"Savio",
+    "emp": 1001,
+    "dep": "Block1",
+    "status": "Approved",
+    "date": "01.Sep.2024"   
+  },
+  {
+    "name":"Jayesh",
+    "emp": 1004,
+    "dep": "Block1",
+    "status": "Disable",
+    "date": "02.Sep.2024"
+  },
+  {
+    "name":"Darren",
+    "emp": 1012,
+    "dep": "Block2",
+    "status": "Error",
+    "date": "02.Sep.2024"
+  },
+  {
+    "name":"Tejashree", 
+    "emp": 1017,
+    "dep": "Block3",
+    "status": "Approved",
+    "date": "03.Sep.2024"
+  }
+]

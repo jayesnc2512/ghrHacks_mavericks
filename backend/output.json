@@ -1,0 +1,133 @@
+{
+    "camera": "E:/Notes/coding/Kongsberg/python-backend/app/sample.mp4",
+    "site": "dept_1",
+    "video_timestamp_seconds": 0.0,
+    "required_prediction": [
+        "Person",
+        "Gloves",
+        "Helmet",
+        "Vest",
+        "Shoes"
+    ],
+    "prediction": [
+        {
+            "person": "Person 1",
+            "safety_gear": {
+                "Person": true,
+                "Gloves": false,
+                "Helmet": true,
+                "Vest": true,
+                "Shoes": true
+            }
+        },
+        {
+            "person": "Person 2",
+            "safety_gear": {
+                "Person": true,
+                "Gloves": false,
+                "Helmet": true,
+                "Vest": true,
+                "Shoes": true
+            }
+        }
+    ]
+}{
+    "camera": "E:/Notes/coding/Kongsberg/python-backend/app/sample.mp4",
+    "site": "dept_1",
+    "video_timestamp_seconds": 4.999315068493151,
+    "required_prediction": [
+        "Person",
+        "Gloves",
+        "Helmet",
+        "Vest",
+        "Shoes"
+    ],
+    "prediction": [
+        {
+            "person": "Person 1",
+            "safety_gear": {
+                "Person": true,
+                "Gloves": false,
+                "Helmet": true,
+                "Vest": true,
+                "Shoes": false
+            }
+        },
+        {
+            "person": "Person 2",
+            "safety_gear": {
+                "Person": true,
+                "Gloves": false,
+                "Helmet": true,
+                "Vest": true,
+                "Shoes": true
+            }
+        }
+    ]
+}{
+    "camera": "E:/Notes/coding/Kongsberg/python-backend/app/sample.mp4",
+    "site": "dept_2",
+    "video_timestamp_seconds": 0.0,
+    "required_prediction": [
+        "Person",
+        "Helmet",
+        "Goggles",
+        "Vest",
+        "Shoes"
+    ],
+    "prediction": [
+        {
+            "person": "Person 1",
+            "safety_gear": {
+                "Person": true,
+                "Helmet": true,
+                "Goggles": false,
+                "Vest": true,
+                "Shoes": true
+            }
+        },
+        {
+            "person": "Person 2",
+            "safety_gear": {
+                "Person": true,
+                "Helmet": true,
+                "Goggles": false,
+                "Vest": true,
+                "Shoes": true
+            }
+        }
+    ]
+}{
+    "camera": "E:/Notes/coding/Kongsberg/python-backend/app/sample.mp4",
+    "site": "dept_2",
+    "video_timestamp_seconds": 4.999315068493151,
+    "required_prediction": [
+        "Person",
+        "Helmet",
+        "Goggles",
+        "Vest",
+        "Shoes"
+    ],
+    "prediction": [
+        {
+            "person": "Person 1",
+            "safety_gear": {
+                "Person": true,
+                "Helmet": true,
+                "Goggles": false,
+                "Vest": true,
+                "Shoes": false
+            }
+        },
+        {
+            "person": "Person 2",
+            "safety_gear": {
+                "Person": true,
+                "Helmet": true,
+                "Goggles": false,
+                "Vest": true,
+                "Shoes": true
+            }
+        }
+    ]
+}
