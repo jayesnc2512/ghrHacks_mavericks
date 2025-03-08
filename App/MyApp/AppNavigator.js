@@ -9,6 +9,10 @@ import SensorsScreen from './screens/SensorsScreen';
 import ComplaintScreen from './screens/ComplaintScreen';
 import RequestScreen from './screens/RequestScreen';
 import SafeExitScreen from './screens/SafeExitScreen';
+import TravelScreen from './screens/TravelScreen';
+import PetrolPumpsScreen from './screens/Travel/PetrolPumpScreen';
+import EmergencyScreen from './screens/Travel/EmergencyScreen';
+import SafeMode from './screens/Travel/SafeMode';
 const AppNavigator = createStackNavigator(
   {
     Login: LoginScreen,
@@ -19,6 +23,10 @@ const AppNavigator = createStackNavigator(
     RequestPending: RequestScreen,  // Admin-only screen
     Complaint: ComplaintScreen,  // User-only screen
     SafeExit: SafeExitScreen,
+    Travel: TravelScreen,
+    SafeMode: SafeMode,
+    PetrolPump: PetrolPumpsScreen,
+    Emergency: EmergencyScreen,
   },
   {
     initialRouteName: 'Login',

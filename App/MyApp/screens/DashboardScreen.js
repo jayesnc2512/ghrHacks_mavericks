@@ -79,6 +79,8 @@ export default function DashboardScreen({ navigation }) {
         <Drawer.Item label="Employee Logs" onPress={() => navigation.navigate('EmployeeLogs')} />
         <Drawer.Item label="Safe Exit" onPress={() => navigation.navigate('SafeExit')} />
         <Drawer.Item label="Settings" onPress={() => navigation.navigate('Settings')} />
+        <Drawer.Item label="TravelBuddy" onPress={() => navigation.navigate('Travel')} />
+        
       </Drawer.Section>
       <TouchableOpacity style={styles.logoutButton} onPress={() => navigation.navigate('Login')}>
         <Text style={styles.logoutText}>Logout</Text>
