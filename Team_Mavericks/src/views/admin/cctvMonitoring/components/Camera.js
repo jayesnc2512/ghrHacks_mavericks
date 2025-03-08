@@ -50,22 +50,38 @@ export default function Banner(props) {
                 fontSize='md'
                 maxW={{ base: "100%", xl: "80%", "3xl": "60%" }}
                 mx='auto'>
-                {props.data.settings}
+                {props.data.prediction_classes.map((it)=> it!=="person" && ` ${it} `)}
             </Text>
-            <Box w='100%' mt='auto'>
-                <Flex w='100%'>
+            <Box w='100%'>
+                <Flex w='50%'>
                     <Button
-                        ms="20px"
-                        w='140px'
-                        minW='140px'
+                        w='80px'
+                        minW='80px'
                         mt={{ base: "20px", "2xl": "auto" }}
+                        me="10px"
                         variant='brand'
                         fontWeight='500'
                         onClick={props.invokeCamera}
                     >
                         Start
                     </Button>
+                  
                 </Flex>
+                <Flex w='50%'>
+                    <Button
+                        w='80px'
+                        minW='80px'
+                        mt={{ base: "20px", "2xl": "auto" }}
+                        me="10px"
+                        variant='brand'
+                        fontWeight='500'
+                        onClick={props.stopCamera}
+                    >
+                        Stop
+                    </Button>
+
+                </Flex>
+
             </Box>
         </Card>
     );
