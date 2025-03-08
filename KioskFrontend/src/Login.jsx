@@ -273,7 +273,7 @@ const Login = ({ setLogin, setUser, user }) => {
 
     const sendImagesToAPI = async (images) => {
         try {
-            const response = await fetch('http://127.0.0.1:8000/check/check-image', {
+            const response = await fetch('http://127.0.0.1:8000/check/face-detect', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -285,16 +285,16 @@ const Login = ({ setLogin, setUser, user }) => {
             });
 
             let result = await response.json();
-            result = result.data.name
+            result = result.data
             console.log(result);
             setResponse(response);
-            if (result === "jayesh") {
+            if (result.include("jayesh")) {
                 setempID("emp001");
                 setPassword("emp001");
                 handleLoginUsingFace();
 
             }
-            if (result === "tejashree") {
+            if (result.include("tejashree")) {
                 setempID("emp002");
                 setPassword("emp002")
                 handleLoginUsingFace();

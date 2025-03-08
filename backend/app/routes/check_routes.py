@@ -23,6 +23,19 @@ async def checkImages(body: checkImages):
     except Exception as err:
         print(f"Error in check Router", err)
         raise HTTPException(status_code=400, detail="Internal Server Error")
+    
+
+@router.post("/face-detect")
+async def checkImages(body: checkImages):
+    try:
+        result = checkController.faceDetect(body.empID, body.images)
+        if result:
+            return {"message": "Image uploaded successfully", "status": 200, "data": result}
+        else:
+            return {"status": 500, "message": "Internal Server Error"}
+    except Exception as err:
+        print(f"Error in check Router", err)
+        raise HTTPException(status_code=400, detail="Internal Server Error")
 
 
 @router.post("/kiosk-log")
