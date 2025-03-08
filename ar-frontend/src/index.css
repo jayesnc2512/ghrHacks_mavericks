@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #edf6f6;
+  background-image: url("./Fireman_assistant.jpg");
+  /* background-image: url("https://media.istockphoto.com/id/535116595/photo/equipment-in-a-doctors-office.jpg?s=612x612&w=0&k=20&c=xl8zro4FsM9xGGPEj_o8q5AS28RzVsnz32rHV0dZ7Zw="); */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;  
+
+}
+
+body.greenScreen {
+  background-color: #00ff00;
+  background-image: none;
+}
