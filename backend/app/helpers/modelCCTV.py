@@ -1,22 +1,20 @@
 import cv2
 import os
 import json
-from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 from typing import List, Dict, Tuple, Optional
 from DB.mongodb import mongodb_client
+from ultralytics import YOLO
 
-
-from inference_sdk import InferenceHTTPClient
 
 class VideoObjectDetection:
-    api_url = "https://detect.roboflow.com"
-    api_key = "oWW9w4FYndkZO5g4VTUE"  # Replace with your actual API key
-    model_id = "ppe-rqnu9/4"
-    client = InferenceHTTPClient(api_url=api_url, api_key=api_key)
+    model_path = "helpers/model/ppe.pt"  # Path to your trained YOLOv8 model
+    model = YOLO(model_path)
 
     @staticmethod
     def resize_frame(frame, max_width=480, max_height=320) -> cv2.Mat:
+        if frame is None or frame.size == 0:
+            return frame
         height, width = frame.shape[:2]
         if width > max_width or height > max_height:
             scaling_factor = min(max_width / width, max_height / height)
@@ -31,35 +29,44 @@ class VideoObjectDetection:
 
         try:
             frame = VideoObjectDetection.resize_frame(frame)
-            result = VideoObjectDetection.client.infer(frame, model_id=VideoObjectDetection.model_id)
-            print(result)  # For debugging
+            result = VideoObjectDetection.model(frame)[0]
 
-            predictions = result.get("predictions", [])
+            predictions = result.boxes.data.tolist()  # Extract bounding box data
+            class_names = VideoObjectDetection.model.names  # Get class labels
+
             results = {
                 "total_persons": 0,
                 "persons": {}
             }
             person_counter = 1
 
+            persons = []  # List to store person bounding boxes
+
             for detection in predictions:
-                if detection['class'] == 'Person':
+                x, y, width, height, confidence, class_idx = detection
+                class_name = class_names[int(class_idx)]
+
+                if class_name == 'Person':
                     person_box = {
-                        "x_min": detection['x'] - detection['width'] / 2,
-                        "x_max": detection['x'] + detection['width'] / 2,
-                        "y_min": detection['y'] - detection['height'] / 2,
-                        "y_max": detection['y'] + detection['height'] / 2
+                        "x_min": x - width / 2,
+                        "x_max": x + width / 2,
+                        "y_min": y - height / 2,
+                        "y_max": y + height / 2
                     }
-
-                    safety_gear = VideoObjectDetection.analyze_safety_gear(predictions, person_box, prediction_classes)
-
-                    if any(not safety_gear[cls] for cls in prediction_classes):  # Check if at least one required class is False
-                        results["total_persons"] += 1
-                        results["persons"][f"Person {person_counter}"] = {
-                            "safety_gear": safety_gear
-                        }
+                    persons.append((person_counter, person_box))
                     person_counter += 1
 
-            VideoObjectDetection.draw_bounding_boxes(frame, predictions)
+            # Analyze safety gear for each person
+            for person_id, person_box in persons:
+                safety_gear = VideoObjectDetection.analyze_safety_gear(predictions, person_box, prediction_classes)
+
+                if any(not safety_gear[cls] for cls in prediction_classes):
+                    results["total_persons"] += 1
+                    results["persons"][f"Person {person_id}"] = {
+                        "safety_gear": safety_gear
+                    }
+
+            VideoObjectDetection.draw_bounding_boxes(frame, predictions, class_names)
             return frame, results
 
         except Exception as e:
@@ -67,17 +74,13 @@ class VideoObjectDetection:
             return None, {}
 
     @staticmethod
-    def draw_bounding_boxes(image: cv2.Mat, predictions: List[Dict]) -> None:
+    def draw_bounding_boxes(image: cv2.Mat, predictions: List[List], class_names: Dict[int, str]) -> None:
         for prediction in predictions:
-            x = int(prediction['x'])
-            y = int(prediction['y'])
-            width = int(prediction['width'])
-            height = int(prediction['height'])
-            class_name = prediction['class']
-            confidence = prediction['confidence']
+            x, y, width, height, confidence, class_idx = prediction
+            class_name = class_names[int(class_idx)]
 
-            top_left = (x - width // 2, y - height // 2)
-            bottom_right = (x + width // 2, y + height // 2)
+            top_left = (int(x - width // 2), int(y - height // 2))
+            bottom_right = (int(x + width // 2), int(y + height // 2))
 
             # Draw bounding box
             cv2.rectangle(image, top_left, bottom_right, (0, 255, 0), 2)
@@ -87,35 +90,28 @@ class VideoObjectDetection:
             cv2.putText(image, label, (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     @staticmethod
-    def analyze_safety_gear(predictions: List[Dict], person_box: Dict, required_classes: List[str]) -> Dict[str, bool]:
+    def analyze_safety_gear(predictions: List[List], person_box: Dict, required_classes: List[str]) -> Dict[str, bool]:
         safety_gear = {cls: False for cls in required_classes}
 
         for detection in predictions:
-            if detection['class'] in required_classes:
-                gear_center_x = detection['x']
-                gear_center_y = detection['y']
+            x, y, _, _, _, class_idx = detection
+            class_name = VideoObjectDetection.model.names[int(class_idx)]
 
-                if (person_box['x_min'] <= gear_center_x <= person_box['x_max'] and
-                        person_box['y_min'] <= gear_center_y <= person_box['y_max']):
-                    safety_gear[detection['class']] = True
+            if class_name in required_classes:
+                if (person_box['x_min'] <= x <= person_box['x_max'] and
+                        person_box['y_min'] <= y <= person_box['y_max']):
+                    safety_gear[class_name] = True
 
         return safety_gear
 
     @staticmethod
-    def should_log(safety_gear: Dict[str, bool]) -> bool:
-        return any(not status for status in safety_gear.values())
-
-
-    @staticmethod
     def display_frame(frame: cv2.Mat) -> None:
-        """Display a frame using matplotlib and automatically go to the next frame."""
-        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)  # Convert BGR to RGB for matplotlib
+        """Display a frame using matplotlib."""
+        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         plt.imshow(frame_rgb)
-        plt.axis('off')  # Hide axis for a cleaner display
+        plt.axis('off')
         plt.draw()
-        plt.pause(0.001)  # Pause to allow the GUI to update
-
-
+        plt.pause(0.01)  # Increased pause for smoother updates
 
     @staticmethod
     def detect_from_video(video_path: str, site: str, prediction_classes: str, target_fps=3) -> None:
@@ -133,16 +129,12 @@ class VideoObjectDetection:
                 print("Error opening video capture")
                 return
 
-            # Get video properties
             original_fps = cap.get(cv2.CAP_PROP_FPS) if cap.get(cv2.CAP_PROP_FPS) > 0 else 30
-            frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            frame_interval = int(original_fps / target_fps)
+            frame_interval = max(1, int(original_fps / target_fps))
             frame_number = 0
 
-            # Calculate frame interval for 5 seconds of video
             log_interval_frames = int(5 * original_fps)
-            last_log_frame = -log_interval_frames  # Start logging after the first interval
+            last_log_frame = -log_interval_frames
 
             while cap.isOpened():
                 ret, frame = cap.read()
@@ -153,49 +145,41 @@ class VideoObjectDetection:
                     processed_frame, results = VideoObjectDetection.process_frame(frame, prediction_classes)
                     if processed_frame is not None:
                         VideoObjectDetection.display_frame(processed_frame)
-             
+
                 if frame_number - last_log_frame >= log_interval_frames:
+                    video_timestamp = frame_number / original_fps
+                    logs = []
 
-                        # Calculate video timestamp in seconds
-                        video_timestamp = frame_number / original_fps
+                    if results["total_persons"] > 0:
+                        for person, info in results["persons"].items():
+                            if any(not v for v in info["safety_gear"].values()):
+                                logs.append({
+                                    "person": person,
+                                    "safety_gear": info["safety_gear"]
+                                })
 
-                        logs = []
+                    if logs:
+                        frame_log = {
+                            "camera": video_path,
+                            "site": site,
+                            "video_timestamp_seconds": video_timestamp,
+                            "frame_name": f"{site}_{video_timestamp:.2f}",
+                            "required_prediction": prediction_classes,
+                            "prediction": logs
+                        }
 
-                        if results["total_persons"] > 0:
-                            for person, info in results["persons"].items():
-                                if VideoObjectDetection.should_log(info["safety_gear"]):
-                                    log_entry = {
-                                        "person": person,
-                                        "safety_gear": info["safety_gear"],
-                                    }
-                                    logs.append(log_entry)
-
-                        if logs:
-                            frame_log = {
-                                "camera": video_path,
-                                "site": site,
-                                "video_timestamp_seconds": video_timestamp,  # Use video timestamp here
-                                "frame_name":f"{site}_{video_timestamp:.2f}",
-                                "required_prediction": prediction_classes,
-                                "prediction": logs
-                            }
-
-                           # Insert the log into MongoDB
+                        if cctv_logs_collection is not None:
                             cctv_logs_collection.insert_one(frame_log)
                             print(f"Inserted log for frame at {video_timestamp:.2f} seconds into MongoDB.")
 
+                        frame_filename = os.path.join(output_dir, f"{site}_{video_timestamp:.2f}.jpg")
+                        cv2.imwrite(frame_filename, processed_frame)
+                        print(f"Saved frame as {frame_filename}")
 
-                            # Save the frame as an image
-                            frame_filename = os.path.join(output_dir, f"{site}_{video_timestamp:.2f}.jpg")
-                            cv2.imwrite(frame_filename, processed_frame)
-                            print(f"Saved frame as {frame_filename}")
-
-                            # Update the last log frame
-                            last_log_frame = frame_number
+                        last_log_frame = frame_number
 
                 frame_number += 1
 
-            # Release resources
             cap.release()
 
         except Exception as err:
