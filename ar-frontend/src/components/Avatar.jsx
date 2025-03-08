@@ -339,6 +339,8 @@ export function Avatar(props) {
         material={materials.Wolf3D_Hair}
         skeleton={nodes.Wolf3D_Hair.skeleton}
       />
+      
+      
       <skinnedMesh
         name="EyeLeft"
         geometry={nodes.EyeLeft.geometry}
