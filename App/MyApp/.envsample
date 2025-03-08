@@ -1,0 +1,3 @@
+WDS_SOCKET_PORT=443
+#EXPO_WEBSOCKET_URL=wss://af5e-45-118-107-172.ngrok-free.app
+#ngrok http 3000
