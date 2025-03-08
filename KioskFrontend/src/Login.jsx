@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import logo from './assets/logo.png'
+import React, { useState, useEffect, useRef } from 'react';
+import logo from './assets/logo.png';
+import blank from './assets/blank.png'
+
 import home from './assets/home.webp'
 import { Form, FormControl, Button } from 'react-bootstrap';
+
 
 
 const styles = {
@@ -44,10 +47,10 @@ const styles = {
         marginBottom: '20px',
         backgroundColor: "transparent",
         outline: "none",
-      
+
 
     },
-  
+
     timeStamp: {
         position: 'absolute', // Position it in the corner
         top: '10px',
@@ -60,8 +63,23 @@ const styles = {
     },
     submit: {
         backgroundColor: "darkblue",
+    },
+    cameraView: {
+        position: 'relative',
+        // marginTop:"10px",
+        width: '400px',
+        height: '70vh',
+        display: "flex",
+        flexDirection: "column",
+        objectFit: 'cover',
+        backgroundColor: 'black',
+        margin: '60px',
+        marginLeft: "240px"
+
     }
 };
+
+
 
 const Login = ({ setLogin, setUser, user }) => {
     // State to store form data
@@ -70,6 +88,16 @@ const Login = ({ setLogin, setUser, user }) => {
     const [currentTime, setCurrentTime] = useState('');
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [errorMessage, setErrorMessage] = useState('');
+    const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+    const [response, setResponse] = useState([]);
+    const [capturedFrames, setCapturedFrames] = useState([]);
+    const videoRef = useRef(null);
+    const [countdown, setCountdown] = useState(null); // Initialize with null
+    const streamRef = useRef(null);
+    const [cameraActive, setCameraActive] = useState(false);
+
+
+
 
     useEffect(() => {
         // Function to update the current time
@@ -110,7 +138,7 @@ const Login = ({ setLogin, setUser, user }) => {
 
             if (response.ok) {
                 const data = await response.json();
-                console.log("userData",data);
+                console.log("userData", data);
                 setUser(data.user); // Set the user state with the response data
                 setLogin(true); // Update the login state to true
                 setErrorMessage(''); // Clear any previous error messages
@@ -123,17 +151,187 @@ const Login = ({ setLogin, setUser, user }) => {
         }
     };
 
+    const handleLoginUsingFace = async () => {
+        // Prevent default form submission behavior
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/auth/kiosk-login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ empID, password }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log("userData", data);
+                setUser(data.user); // Set the user state with the response data
+                setLogin(true); // Update the login state to true
+                setErrorMessage(''); // Clear any previous error messages
+            } else {
+                setErrorMessage('Invalid Employee ID or Password'); // Show error message
+            }
+        } catch (error) {
+            console.error('Error during login:', error);
+            setErrorMessage('An error occurred during login. Please try again.');
+        }
+    };
+
+    useEffect(() => {
+        setCountdown(5);
+    }, [])
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            if (response) {
+                stopCamera();
+                alert("Face detection failed, please login manually.");
+            }
+        }, 15000); // 15 seconds
+        return () => clearTimeout(timeoutId); 
+    }, []); // Runs when `response` changes
+
+
+    useEffect(() => {
+        let timer;
+        if (countdown === 5) {
+            startCamera();
+
+        }
+        if (countdown !== null && countdown > 0) {
+            timer = setInterval(() => {
+                setCountdown(prevCount => prevCount - 1);
+            }, 1000);
+        } else if (countdown === 0) {
+            startCapture();
+        }
+
+        return () => clearInterval(timer);
+    }, [countdown]);
+
+    useEffect(() => {
+        if (response) {
+            stopCamera();
+        }
+    }, [response]);
+
+    const startCamera = () => {
+        if (!cameraActive) {
+            navigator.mediaDevices
+                .getUserMedia({ video: true })
+                .then((stream) => {
+                    streamRef.current = stream;
+                    videoRef.current.srcObject = stream;
+                    setCameraActive(true);
+                })
+                .catch((err) => console.error('Error accessing camera:', err));
+        }
+    };
+
+    const stopCamera = () => {
+        if (cameraActive) {
+            streamRef.current.getTracks().forEach(track => track.stop());
+            setCameraActive(false);
+        }
+    };
+
+    const startCapture = () => {
+        let captures = 0;
+        let intervalId;
+
+        const captureFrames = async () => {
+            if (captures >= 5) {
+                clearInterval(intervalId);
+                return;
+            }
+
+            const canvas1 = document.createElement('canvas');
+            const canvas2 = document.createElement('canvas');
+            canvas1.width = canvas2.width = videoRef.current.videoWidth;
+            canvas1.height = canvas2.height = videoRef.current.videoHeight;
+
+            const ctx1 = canvas1.getContext('2d');
+            const ctx2 = canvas2.getContext('2d');
+
+            ctx1.drawImage(videoRef.current, 0, 0, canvas1.width, canvas1.height);
+            ctx2.drawImage(videoRef.current, 0, 0, canvas2.width, canvas2.height);
+
+            const newFrame1 = canvas1.toDataURL('image/png');
+            const newFrame2 = canvas2.toDataURL('image/png');
+
+            setCapturedFrames(prevFrames => [...prevFrames, newFrame1, newFrame2]);
+            captures++;
+
+            await sendImagesToAPI([newFrame1, newFrame2]);
+        };
+
+        setTimeout(() => {
+            intervalId = setInterval(captureFrames, 1000);
+        }, 500);
+    };
+
+    const sendImagesToAPI = async (images) => {
+        try {
+            const response = await fetch('http://127.0.0.1:8000/check/check-image', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    empID: user?.empID,
+                    images: images,
+                }),
+            });
+
+            let result = await response.json();
+            result = result.data.name
+            console.log(result);
+            setResponse(response);
+            if (result === "jayesh") {
+                setempID("emp001");
+                setPassword("emp001");
+                handleLoginUsingFace();
+
+            }
+            if (result === "tejashree") {
+                setempID("emp002");
+                setPassword("emp002")
+                handleLoginUsingFace();
+            }
+
+        } catch (error) {
+            console.error('Error sending images to API:', error);
+        }
+    };
+
     return (
         <div className="row container-fluid m-0 p-0" style={styles.container}>
             <div className="col-7" style={styles.col1}>
-                <img src={logo} style={styles.logo}></img>
-                <div style={styles.headingsBox}>
-                    <h2 className="text-start"><strong>Make sure you've wear proper kit</strong></h2>
+                <div style={styles.headingsBox} >
+                    <h2 className="text-start"><strong>Please be in upright position</strong></h2>
                     <h6 className="text-start" style={styles.h6}>*Proceed only if you’re cleared to go by the system</h6>
                 </div>
-                <img className='col-6 offset-3' src={home} style={styles.homeImage}>
-                </img>
+                <video
+                    ref={videoRef}
+                    autoPlay
+                    style={styles.cameraView}
+                    className='col-9'
+                />
             </div>
+            {countdown > 0 && (
+                <div className="countdown-timer" style={{
+                    position: "fixed",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    fontSize: "6rem",
+                    color: "darkblue",
+                    zIndex: 1000
+                }}>
+                    <h1>{countdown}</h1>
+                </div>
+            )}
             <div className="col-5" style={styles.formDiv}>
                 <h4 className='r-0' style={styles.timeStamp}>
                     {currentTime}

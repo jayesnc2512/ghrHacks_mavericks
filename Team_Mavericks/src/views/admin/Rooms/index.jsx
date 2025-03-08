@@ -90,7 +90,7 @@ const RoomsPage = () => {
                 <FontAwesomeIcon icon={faCog} /> Settings
               </button>
             </div>
-            {card.showSettings && (
+
               <div className="room-card-settings">
                 <label>
                   <input
@@ -135,7 +135,6 @@ const RoomsPage = () => {
                   /> Glasses
                 </label> 
               </div>
-            )}
           </div>
         ))}
       </div>

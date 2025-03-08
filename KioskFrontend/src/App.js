@@ -6,6 +6,7 @@ import Login from './Login';
 const App = () => {
     const [login, setLogin] = useState(false);
     const [user, setUser] = useState({});
+    const [faceRec, setFaceRec] = useState(false);
 
 
   return (

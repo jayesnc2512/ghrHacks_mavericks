@@ -13,6 +13,8 @@ import MainDashboard from 'views/admin/default';
 import NFTMarketplace from 'views/admin/marketplace';
 import DataTables from 'views/admin/kiosk';
 import RoomsPage from 'views/admin/Rooms'; // Ensure this import is correct
+import CctvLogs from "views/admin/cctvLogs"
+import CctvMonitor from 'views/admin/cctvMonitoring';
 
 // Auth Imports
 import SignInCentered from 'views/auth/signIn';
@@ -25,13 +27,19 @@ const routes = [
     icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
     component: <SignInCentered />,
   },
-
   {
     name: 'Dashboard Manager',
     layout: '/admin',
     path: '/default',
     icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
     component: <MainDashboard />,
+  },
+  {
+    name: 'CCTV Monitoring',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/cctv',
+    component: <CctvMonitor />,
   },
   {
     name: 'Rooms',
@@ -54,6 +62,28 @@ const routes = [
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: '/data-tables',
     component: <DataTables />,
+  },
+  {
+    name: 'CCTV Logs',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/cctv-logs',
+    component: <CctvLogs />,
+  },
+  
+  {
+    name: 'Industrial Safety ChatBot',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/chat',
+    component: <CctvLogs />,
+  },
+  {
+    name: 'Industrial Safety Tutorials',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/tutorials',
+    component: <CctvLogs />,
   },
 ];
 

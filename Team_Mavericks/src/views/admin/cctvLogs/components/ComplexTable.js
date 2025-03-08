@@ -58,11 +58,10 @@ export default function ComplexTable() {
 
 
 
-  const headers = ["Sr.no", "Employee Name", "Log Details", "Status", "Time"];
+  const headers = ["Sr.no","Camera", "Log Details", "Time"];
   const rows = [{
-    employeeName: "JNC",
+    employeeName: "DEPT 1.1",
     logDetails: "as",
-    status: "true",
     time:"03/07/2025 18:20"
   }]
 
@@ -70,7 +69,7 @@ export default function ComplexTable() {
     <Card flexDirection="column" w="100%" px="0px" overflowX="auto">
       <Flex px="25px" mb="8px" justifyContent="space-between" align="center">
         <Text color={textColor} fontSize="22px" fontWeight="700" lineHeight="100%">
-          Kiosk Log
+          CCTV Log
         </Text>
         <Menu />
       </Flex>
@@ -101,7 +100,7 @@ export default function ComplexTable() {
           </Thead>
           <Tbody>
             {rows.map((row,index) => (
-              <Tr key={index}>
+              <Tr key={index} backgroundColor={row.status ? "lightgreen" : "red.200"}>
                 {/* SRNO */}
                   <Td
                     key={index}
@@ -109,7 +108,6 @@ export default function ComplexTable() {
                     minW={{ sm: '150px', md: '200px', lg: 'auto' }}
                   borderColor="transparent"
                   textAlign="center"
-
                   >
                     {index+1}
                 </Td>
@@ -135,17 +133,7 @@ export default function ComplexTable() {
                 >
                   {row.logDetails}
                 </Td>
-                {/* status */}
-                <Td
-                  key={index}
-                  fontSize={{ sm: '14px' }}
-                  minW={{ sm: '150px', md: '200px', lg: 'auto' }}
-                  borderColor="transparent"
-                  textAlign="center"
-
-                >
-                  {row.status}
-                </Td>
+               
                 {/* time */}
                 <Td
                   key={index}

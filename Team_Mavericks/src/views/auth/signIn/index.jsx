@@ -31,7 +31,7 @@ function SignIn() {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    if (email === "emp001@mavericks.com" && password === "emp001") {
+    if (email === "emp001@gmail.com" && password === "emp001") {
       navigate('/admin/default');
     } else {
       setError("Invalid email or password");
@@ -106,7 +106,7 @@ function SignIn() {
             fontSize='sm'
             ms={{ base: "0px", md: "0px" }}
             type='email'
-            placeholder='mail@mavericks.com'
+            placeholder='mail@gmail.com'
             mb='24px'
             fontWeight='500'
             size='lg'
