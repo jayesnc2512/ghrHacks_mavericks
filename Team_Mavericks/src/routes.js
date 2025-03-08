@@ -15,6 +15,8 @@ import DataTables from 'views/admin/kiosk';
 import RoomsPage from 'views/admin/Rooms'; // Ensure this import is correct
 import CctvLogs from "views/admin/cctvLogs"
 import CctvMonitor from 'views/admin/cctvMonitoring';
+import Chat from "./views/admin/chatbot"
+import Tutorial from 'views/admin/tutorials';
 
 // Auth Imports
 import SignInCentered from 'views/auth/signIn';
@@ -67,7 +69,7 @@ const routes = [
     name: 'CCTV Logs',
     layout: '/admin',
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
-    path: '/cctv-logs',
+    path: '/cctv_logs',
     component: <CctvLogs />,
   },
   
@@ -76,7 +78,7 @@ const routes = [
     layout: '/admin',
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: '/chat',
-    component: <CctvLogs />,
+    component: <Chat />,
   },
   {
     name: 'Industrial Safety Tutorials',
@@ -84,6 +86,13 @@ const routes = [
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: '/tutorials',
     component: <CctvLogs />,
+  },
+  {
+    name: 'Safety Tutorials',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/yt-tutorials',
+    component: <Tutorial />,
   },
 ];
 

@@ -1,13 +1,16 @@
 import cv2
 import os
 import json
+import asyncio
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 from typing import List, Dict, Tuple, Optional
-from DB.mongodb import mongodb_client
-
+from ..DB.mongodb import mongodb_client
+from app.routes.ws import send_websocket_message,send_message_sync  # Ensure this is async
 
 from inference_sdk import InferenceHTTPClient
+import asyncio
+
 
 class VideoObjectDetection:
     api_url = "https://detect.roboflow.com"
@@ -69,6 +72,10 @@ class VideoObjectDetection:
     @staticmethod
     def draw_bounding_boxes(image: cv2.Mat, predictions: List[Dict]) -> None:
         for prediction in predictions:
+            if prediction['class']=='Gloves':
+                continue
+            if prediction['class']=='Goggles' and prediction['confidence']<0.50:
+                continue
             x = int(prediction['x'])
             y = int(prediction['y'])
             width = int(prediction['width'])
@@ -105,7 +112,6 @@ class VideoObjectDetection:
     def should_log(safety_gear: Dict[str, bool]) -> bool:
         return any(not status for status in safety_gear.values())
 
-
     @staticmethod
     def display_frame(frame: cv2.Mat) -> None:
         """Display a frame using matplotlib and automatically go to the next frame."""
@@ -114,8 +120,6 @@ class VideoObjectDetection:
         plt.axis('off')  # Hide axis for a cleaner display
         plt.draw()
         plt.pause(0.001)  # Pause to allow the GUI to update
-
-
 
     @staticmethod
     def detect_from_video(video_path: str, site: str, prediction_classes: str, target_fps=3) -> None:
@@ -133,69 +137,48 @@ class VideoObjectDetection:
                 print("Error opening video capture")
                 return
 
-            # Get video properties
             original_fps = cap.get(cv2.CAP_PROP_FPS) if cap.get(cv2.CAP_PROP_FPS) > 0 else 30
-            frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
             frame_interval = int(original_fps / target_fps)
             frame_number = 0
-
-            # Calculate frame interval for 5 seconds of video
             log_interval_frames = int(5 * original_fps)
-            last_log_frame = -log_interval_frames  # Start logging after the first interval
+            last_log_frame = -log_interval_frames  
 
             while cap.isOpened():
                 ret, frame = cap.read()
                 if not ret:
                     break
-
+               
                 if frame_number % frame_interval == 0:
                     processed_frame, results = VideoObjectDetection.process_frame(frame, prediction_classes)
                     if processed_frame is not None:
                         VideoObjectDetection.display_frame(processed_frame)
              
                 if frame_number - last_log_frame >= log_interval_frames:
+                    video_timestamp = frame_number / original_fps
+                    logs = []
 
-                        # Calculate video timestamp in seconds
-                        video_timestamp = frame_number / original_fps
+                    if results["total_persons"] > 0:
+                        for person, info in results["persons"].items():
+                            if VideoObjectDetection.should_log(info["safety_gear"]):
+                                logs.append({
+                                    "person": person,
+                                    "safety_gear": info["safety_gear"],
+                                })
 
-                        logs = []
+                    if logs:
+                        frame_log = {
+                            "camera": video_path,
+                            "site": site,
+                            "video_timestamp_seconds": video_timestamp,
+                            "frame_name": f"{site}_{video_timestamp:.2f}",
+                            "required_prediction": prediction_classes,
+                            "prediction": logs
+                        }
 
-                        if results["total_persons"] > 0:
-                            for person, info in results["persons"].items():
-                                if VideoObjectDetection.should_log(info["safety_gear"]):
-                                    log_entry = {
-                                        "person": person,
-                                        "safety_gear": info["safety_gear"],
-                                    }
-                                    logs.append(log_entry)
-
-                        if logs:
-                            frame_log = {
-                                "camera": video_path,
-                                "site": site,
-                                "video_timestamp_seconds": video_timestamp,  # Use video timestamp here
-                                "frame_name":f"{site}_{video_timestamp:.2f}",
-                                "required_prediction": prediction_classes,
-                                "prediction": logs
-                            }
-
-                           # Insert the log into MongoDB
-                            cctv_logs_collection.insert_one(frame_log)
-                            print(f"Inserted log for frame at {video_timestamp:.2f} seconds into MongoDB.")
-
-
-                            # Save the frame as an image
-                            frame_filename = os.path.join(output_dir, f"{site}_{video_timestamp:.2f}.jpg")
-                            cv2.imwrite(frame_filename, processed_frame)
-                            print(f"Saved frame as {frame_filename}")
-
-                            # Update the last log frame
-                            last_log_frame = frame_number
+                        cctv_logs_collection.insert_one(frame_log)
+                        send_message_sync(f"Violation of PPE Detected {site}")
 
                 frame_number += 1
-
-            # Release resources
             cap.release()
 
         except Exception as err:
