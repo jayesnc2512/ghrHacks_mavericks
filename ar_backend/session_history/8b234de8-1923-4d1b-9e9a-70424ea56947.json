@@ -1,0 +1,14 @@
+[
+    {
+        "user": "Hi.  Hello there.\n",
+        "assistant": "Hello.  What brings you in today?"
+    },
+    {
+        "user": "Kyun? I am sleep deprived.\n",
+        "assistant": "What is your age and gender?"
+    },
+    {
+        "user": "I'm 21.\n",
+        "assistant": "Okay.  And what is your gender?"
+    }
+]

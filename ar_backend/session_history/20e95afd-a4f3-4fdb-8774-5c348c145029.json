@@ -1,0 +1,14 @@
+[
+    {
+        "user": "Please provide the audio.  I need to hear the audio to transcribe it.\n",
+        "assistant": "I cannot provide the audio.  I need you to describe your symptoms.  What is your chief complaint?"
+    },
+    {
+        "user": "Uh, I can't remember something from yesterday.\n",
+        "assistant": "What is your age and gender?"
+    },
+    {
+        "user": "What's my age? My age is 21. What's my gender? I identify as a male.\n",
+        "assistant": "What is the nature of your inability to remember something from yesterday?  Was it a specific event, or a general feeling of forgetfulness?"
+    }
+]

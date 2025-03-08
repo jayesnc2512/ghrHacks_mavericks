@@ -1,0 +1,54 @@
+[
+    {
+        "user": "\u0939\u0947\u0932\u094b \u0921\u0949\u0915\u094d\u091f\u0930\n",
+        "assistant": "Hello.  What brings you in today?"
+    },
+    {
+        "user": "I am feeling weakness and dizziness.\n",
+        "assistant": "What is your age and gender?"
+    },
+    {
+        "user": "I am 22 years old. I am a female.\n",
+        "assistant": "Okay.  Weakness and dizziness can have many causes.  Do you experience any nausea or vomiting?"
+    },
+    {
+        "user": "Yes, I feel nauseous.\n",
+        "assistant": "Do you have any other symptoms, such as headache, fever, or changes in vision?"
+    },
+    {
+        "user": "\u092e\u0941\u091d\u0947 \u0915\u092d\u0940 \u0915\u092d\u0940 \u0939\u0947\u0921\u0947\u0915 \u0939\u094b\u0924\u093e \u0939\u0948\u0964\n",
+        "assistant": "Okay.  \"Kabhi kabhi headache hota hai\" translates to \"I sometimes have a headache.\"  \n\nDo you experience any chest pain or palpitations?"
+    },
+    {
+        "user": "No, I don't.\n",
+        "assistant": "Possible diagnoses include dehydration, anemia, or an inner ear infection.  To help narrow this down,  do you have any history of fainting or near-fainting episodes?"
+    },
+    {
+        "user": "No, actually I don't.\n",
+        "assistant": "Possible diagnoses include dehydration, anemia, and inner ear infection.  To further clarify,  do you have any menstrual irregularities?"
+    },
+    {
+        "user": "Yes.  Ppppppp\n",
+        "assistant": "Possible diagnoses include dehydration, anemia, and inner ear infection.  To help narrow this down,  what is the nature of your menstrual irregularities? (e.g., heavy bleeding, prolonged bleeding, infrequent periods)"
+    },
+    {
+        "user": "Please provide the audio.  I need to hear the audio to transcribe it.\n",
+        "assistant": "Please provide the audio recording describing your menstrual irregularities.  I need this information to accurately assess your condition."
+    },
+    {
+        "user": "What information do you need?  Sure.  Uh, I'll be...\n",
+        "assistant": "I need a recording of your description of your menstrual irregularities to accurately assess your condition.  Once I have that information, I can provide a more precise diagnosis."
+    },
+    {
+        "user": "Please provide the audio.  I need to hear the audio to transcribe it.\n",
+        "assistant": "I need a recording of your description of your menstrual irregularities to accurately assess your condition.  Once I have that information, I can provide a more precise diagnosis."
+    },
+    {
+        "user": "I don't have that.\n",
+        "assistant": "Given the reported symptoms (weakness, dizziness, nausea, occasional headaches, and menstrual irregularities),  and the lack of information regarding the nature of the menstrual irregularities,  I cannot provide a definitive diagnosis.  I need a description of your menstrual irregularities (heavy bleeding, prolonged bleeding, infrequent periods, etc.) to proceed."
+    },
+    {
+        "user": "Please provide the audio.  I need to hear the audio to transcribe it.\n",
+        "assistant": "I cannot provide a definitive diagnosis without a description of your menstrual irregularities.  Please describe the nature of your irregular periods (e.g., heavy bleeding, prolonged bleeding, infrequent periods)."
+    }
+]

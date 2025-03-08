@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "soundFile": "D:\\imagine\\virtual\\r3f-virtual-girlfriend-backend\\audios\\message_0.wav",
+    "duration": 1.85
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.07, "value": "X" },
+    { "start": 0.07, "end": 0.15, "value": "B" },
+    { "start": 0.15, "end": 0.29, "value": "F" },
+    { "start": 0.29, "end": 0.36, "value": "B" },
+    { "start": 0.36, "end": 0.57, "value": "C" },
+    { "start": 0.57, "end": 1.06, "value": "B" },
+    { "start": 1.06, "end": 1.20, "value": "C" },
+    { "start": 1.20, "end": 1.55, "value": "B" },
+    { "start": 1.55, "end": 1.85, "value": "X" }
+  ]
+}
