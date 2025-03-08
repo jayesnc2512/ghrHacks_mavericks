@@ -26,6 +26,31 @@ export default function Main() {
 
   //   return () => clearInterval(interval); // Cleanup interval on unmount
   // }, []);
+  useEffect(() => {
+    // Connect to WebSocket
+    const ws = new WebSocket("ws://localhost:8001/ws");
+
+    ws.onopen = () => {
+      console.log("Connected to WebSocket");
+    };
+
+    ws.onmessage = (event) => {
+      console.log("Received message:", event.data);
+      toast.error(event.data, { autoClose: 5000 });
+    };
+
+    ws.onerror = (error) => {
+      console.error("WebSocket Error:", error);
+    };
+
+    ws.onclose = () => {
+      console.log("WebSocket disconnected");
+    };
+
+    return () => {
+      ws.close(); // Cleanup on component unmount
+    };
+  }, []);
 
   return (
     <ChakraProvider theme={currentTheme}>
