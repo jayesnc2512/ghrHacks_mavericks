@@ -27,3 +27,14 @@ async def get_kiosk_logs():
     except Exception as err:
         print(f"Unexpected error: {err}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
+
+@router.get("/start-cctv")
+async def invoke_camera():
+    try:
+        
+
+        return {"status":200,"data":"hello"}
+    except Exception as err:
+        print(f"Error in invokeccamera",err)
+        raise HTTPException(status_code=500, detail="Internal Server Error")
+
