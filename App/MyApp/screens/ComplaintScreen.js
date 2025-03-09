@@ -13,6 +13,12 @@ import {
 import { Picker } from '@react-native-picker/picker';
 import * as ImagePicker from 'expo-image-picker';
 import { StatusBar } from 'react-native';
+import { createClient } from '@supabase/supabase-js';
+
+// Initialize Supabase
+const SUPABASE_URL = 'https://hodznxjxxcynikdxvyyl.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZHpueGp4eGN5bmlrZHh2eXlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE0Njk1MjYsImV4cCI6MjA1NzA0NTUyNn0.qU5mrxx238NfhTkWuzdVFdyA3mgdlERb4tiShUkbW50';
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 export default class App extends Component {
   state = {
@@ -48,7 +54,7 @@ export default class App extends Component {
   };
 
   uploadImage = async () => {
-    const { image, description } = this.state;
+    const { image, name, email, issueType, description } = this.state;
     if (!image) {
       Alert.alert('No Image Selected', 'Please select an image before uploading.');
       return;
@@ -79,6 +85,26 @@ export default class App extends Component {
       let data = await response.json();
       console.log('Uploaded Image URL:', data.secure_url);
       Alert.alert('Success', 'Image uploaded successfully!');
+
+      // Store metadata in Supabase
+      const { error } = await supabase
+        .from('complaints') // Replace with your actual table name
+        .insert([
+          {
+            name,
+            email,
+            issue_type: issueType,
+            description,
+            image_url: data.secure_url,
+          },
+        ]);
+
+      if (error) {
+        console.error('Error inserting data into Supabase:', error);
+        Alert.alert('Database Error', 'Failed to save data to the database.');
+      } else {
+        Alert.alert('Success', 'Data saved successfully!');
+      }
     } catch (error) {
       console.error('Upload error:', error);
       Alert.alert('Upload Failed', 'Something went wrong while uploading.');
@@ -210,4 +236,3 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
-
