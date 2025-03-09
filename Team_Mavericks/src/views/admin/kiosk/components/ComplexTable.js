@@ -39,7 +39,7 @@ const safetyItems = [
   { key: "glasses", icon: GiProtectionGlasses },
   { key: "boots", icon: FaShoePrints },
   { key: "helmet", icon: FaHelmetSafety },
-  { key: "jacket", icon: MdCheckCircle }
+  { key: "vest", icon: MdCheckCircle }
 ];
 
 export default function ComplexTable() {

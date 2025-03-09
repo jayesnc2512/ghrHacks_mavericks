@@ -81,13 +81,6 @@ const routes = [
     component: <Chat />,
   },
   {
-    name: 'Industrial Safety Tutorials',
-    layout: '/admin',
-    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
-    path: '/tutorials',
-    component: <CctvLogs />,
-  },
-  {
     name: 'Safety Tutorials',
     layout: '/admin',
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,

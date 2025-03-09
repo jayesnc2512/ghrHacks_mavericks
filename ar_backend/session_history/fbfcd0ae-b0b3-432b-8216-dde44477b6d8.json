@@ -1,0 +1,38 @@
+[
+    {
+        "user": "hii",
+        "assistant": "Hello.  What brings you in today?"
+    },
+    {
+        "user": "I am feeling cold",
+        "assistant": "Do you have a fever?"
+    },
+    {
+        "user": "Yes",
+        "assistant": "Do you have any other symptoms besides feeling cold and having a fever?"
+    },
+    {
+        "user": "No",
+        "assistant": "Do you have a cough?"
+    },
+    {
+        "user": "No",
+        "assistant": "Do you have a runny nose or sore throat?"
+    },
+    {
+        "user": "both",
+        "assistant": "Based on your answers, the most likely diagnosis is a viral infection, possibly influenza (the flu).  However, to be certain, I need more information.\n\nDo you have any muscle aches or body pains?"
+    },
+    {
+        "user": "i didnt understand you anser",
+        "assistant": "I apologize for the unclear explanation.  My previous answer was a possible diagnosis based on limited information.  To clarify,  a viral infection, such as influenza, is a possibility given your symptoms of fever, cold, runny nose, and sore throat. However, other illnesses could present similarly.  To reach a more accurate diagnosis, I need more information."
+    },
+    {
+        "user": "how",
+        "assistant": "How long have you had these symptoms?"
+    },
+    {
+        "user": "a week",
+        "assistant": "How severe is your runny nose and sore throat? (Scale of 1-10, 10 being the worst)"
+    }
+]

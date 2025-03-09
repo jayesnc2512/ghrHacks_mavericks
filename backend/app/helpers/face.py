@@ -162,7 +162,7 @@ def detect_face(frame):
     return detected_name, frame
 
 # Start webcam and continuously recognize until a known face is detected
-video_capture = cv2.VideoCapture(0)
-detected_person = detect_face_until_known(video_capture)
-video_capture.release()
-cv2.destroyAllWindows()
+# video_capture = cv2.VideoCapture(0)
+# detected_person = detect_face_until_known(video_capture)
+# video_capture.release()
+# cv2.destroyAllWindows()

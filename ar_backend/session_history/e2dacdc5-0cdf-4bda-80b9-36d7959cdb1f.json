@@ -1,0 +1,38 @@
+[
+    {
+        "user": "hii",
+        "assistant": "Hello.  What brings you in today?"
+    },
+    {
+        "user": "I am feeling nauseus",
+        "assistant": "Nausea can have many causes.  To help me understand what's going on, could you tell me your age and gender?"
+    },
+    {
+        "user": "22 f",
+        "assistant": "Okay.  And how long have you been feeling nauseous?"
+    },
+    {
+        "user": "since a week",
+        "assistant": "Since a week, huh?  Have you been vomiting?"
+    },
+    {
+        "user": "not really but i feel like",
+        "assistant": "Do you have any other symptoms, such as abdominal pain, diarrhea, fever, or headache?"
+    },
+    {
+        "user": "no",
+        "assistant": "Do you have any other symptoms, such as changes in appetite, fatigue, or menstrual irregularities?"
+    },
+    {
+        "user": "yes missed mensews",
+        "assistant": "Missed menses along with nausea for a week could indicate pregnancy.  However, other possibilities exist.\n\nIs there any chance you could be pregnant?"
+    },
+    {
+        "user": "may be",
+        "assistant": "Yes, it's possible.  We need to rule out other causes.  Are you sexually active?"
+    },
+    {
+        "user": "yes",
+        "assistant": "Yes, given missed menses and nausea for a week, pregnancy is a strong possibility.  We need to confirm this.\n\nPossible Diagnoses:\n\n* Pregnancy\n* Gastroenteritis (less likely given the lack of vomiting and diarrhea)\n* Other hormonal imbalances (less likely given missed menses and nausea are the primary symptoms)\n\nPrognosis and Treatment:\n\nA pregnancy test is needed to confirm or rule out pregnancy.  If positive, prenatal care will be initiated. If negative, we will explore other causes.  For now, I recommend over-the-counter medication for nausea, such as ondansetron or promethazine.  However, this should only be taken after confirming pregnancy is ruled out.  Please take a home pregnancy test and come back with the results."
+    }
+]

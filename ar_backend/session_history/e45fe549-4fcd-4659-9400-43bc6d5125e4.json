@@ -1,0 +1,6 @@
+[
+    {
+        "user": "in the street\n",
+        "assistant": "I need more information to answer your question.  \"In the street\" is too vague.  To advise on industrial safety, I need to know what activity is taking place in the street.  For example:\n\n* What type of work is being done? (e.g., road construction, utility repair, filming)\n* What are the potential hazards? (e.g., traffic, falling objects, excavation)\n* What is the location? (This helps determine specific local regulations and potential environmental hazards.)\n* What are the workers wearing for Personal Protective Equipment (PPE)?\n* What safety measures are in place? (e.g., traffic control, barricades, warning signs)"
+    }
+]

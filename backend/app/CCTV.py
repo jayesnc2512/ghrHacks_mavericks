@@ -3,7 +3,7 @@ from tkinter import filedialog, messagebox
 from helpers.ui import PythonUI
 from helpers.modelCCTV import VideoObjectDetection
 
-def CCTV(video_path, name, prediction_classes):
+def CCTV():
     try:
         # Initialize Tkinter root and hide it initially
         root = tk.Tk()
@@ -33,7 +33,7 @@ def CCTV(video_path, name, prediction_classes):
         print(f"Prediction Classes: {','.join(prediction_classes)}")
 
         # Call the VideoObjectDetection method with the selected parameters
-        VideoObjectDetection.detect_from_video(video_path=video_path, site=name, prediction_classes=','.join(prediction_classes))
+        VideoObjectDetection.detect_from_video(video_path=video_path, site=site, prediction_classes=','.join(prediction_classes))
 
     except Exception as err:
         print("Error in CCTV.py:", err)
