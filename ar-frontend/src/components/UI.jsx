@@ -136,7 +136,7 @@ export const UI = ({ hidden, ...props }) => {
           Action
         </button>
       </div> */}
-        <div className="fixed bottom-16 left-4 pointer-events-auto" style={{bottom:"200px"}}>
+        {/* <div className="fixed bottom-16 left-4 pointer-events-auto" style={{bottom:"200px"}}>
           <button
             className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full shadow-lg cursor-pointer flex items-center justify-center w-20 h-20"
             style={{ fontSize: "25px" }}
@@ -146,24 +146,24 @@ export const UI = ({ hidden, ...props }) => {
             <FontAwesomeIcon icon={faUserDoctor} size="lg" />
           </button>
 
-      </div>
+      </div> */}
 
-      <div className="fixed bottom-18 left-4 pointer-events-auto">
+      {/* <div className="fixed bottom-18 left-4 pointer-events-auto">
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full shadow-lg cursor-pointer flex items-center justify-center w-20 h-20" style={{fontSize:"25px"}}
           onClick={handleUploadClick}
         >
           <FontAwesomeIcon icon={faUpload} size="lg" />
         </button>
-      </div>
-      <div className="fixed bottom-20 left-4 pointer-events-auto">
+      </div> */}
+      {/* <div className="fixed bottom-20 left-4 pointer-events-auto">
         <input
           id="file-upload"
           type="file"
           onChange={handleFileChange}
 
         />
-      </div>
+      </div> */}
 
         
       <div className="fixed top-8 left-4 pointer-events-auto">

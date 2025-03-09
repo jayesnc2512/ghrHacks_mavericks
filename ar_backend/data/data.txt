@@ -1,0 +1,755 @@
+Maharashtra Intellectual Property Crime Unit (MIPCU)
+MIPCU is a dedicated unit working on Intellectual Property Rights (IPR) protection through investigation and enforcement actions against infringers. It focuses on providing information to brands, IP holders, and legal professionals representing brands, with additional highlights on achievements like the Thop TV and FairPlay cases. Suggestions for engaging with MIPCU, such as consulting or submitting complaints, are included.
+
+How to Become Part of MIPCU
+To leverage the services of MIPCU, you can onboard with Pirates Alert as a client by providing a Brand Authorization Letter. Pirates Alert team members are integral to MIPCU and act on your behalf to investigate and take enforcement actions against infringers.
+
+Pricing Model
+Yearly Contract – Subscription Model (Preferred)
+
+Ideal for addressing recurring infringements.
+Ensures long-term collaboration to deeply understand and resolve the challenges brands face.
+Case-Based Model (Not Preferred)
+
+MIPCU, being a pilot initiative by the government, operates as a closed group.
+The focus is on building long-term relationships with reputable brands to ensure effective enforcement through an in-depth understanding of the issues.
+
+How MIPCU Is Currently Used
+Suspending Infringing Domains
+
+Used predominantly to combat digital content piracy.
+Addressing Phishing and Cybersquatting Domains
+
+Helps in trademark infringement cases by suspending malicious domains.
+Cooperation with Social Media and Intermediaries
+
+Enables suspension or investigation of infringing content for both copyright and trademark violations.
+Unmasking the Real Identity of Infringers
+
+Investigative actions to uncover infringers' identities using advanced tools.
+Voluntary Takedowns of Infringing Content
+
+Proactively removing infringing material without legal delays.
+Criminal Enforcement Actions
+
+Coordinating with law enforcement to initiate criminal proceedings.
+Preliminary Investigations
+
+Conducting groundwork to gather actionable insights on infringers.
+While MIPCU has primarily focused on online investigations and enforcement, it has also executed offline actions in the past. Though it has yet to work extensively on counterfeit cases, its framework can address such issues effectively.
+
+Actions Based on Severity of Infringement
+For minor offenses, MIPCU issues warning notices to deter future violations and ensures the removal of all identified and unidentified infringements.
+For major offenses, the unit undertakes serious measures such as:
+- Tracing and identifying the root identities of infringers.
+- Disruption of infringing networks.
+- Freezing assets and revenue generated through unlawful means.
+- Arresting offenders and ensuring criminal accountability.
+
+Addressing Fake Job Posts and Impersonation Cases
+MIPCU also assists in combating cyber fraud, including fake job postings and impersonating social media accounts, by:
+- **Tracing and Identifying Sources:** Using digital investigation tools to uncover the origin of fraudulent posts or accounts.
+- **Coordinating Takedowns:** Working with platforms like LinkedIn, Facebook, and Instagram to remove fake job postings or impersonations.
+- **Legal and Enforcement Actions:** Issuing warning notices or initiating legal action for severe cases under the Information Technology Act and Trademark Act.
+- **Raising Awareness:** Issuing public advisories to warn users about ongoing scams and impersonations.
+
+Examples of Where MIPCU Can Be Used
+MIPCU’s scope extends to various intellectual property and cybercrime-related areas, including:
+1. **Digital Piracy:** Investigating and taking down unauthorized streaming platforms (e.g., Thop TV and FairPlay cases).
+2. **Trademark Violations:** Tackling cybersquatting, phishing domains, and unauthorized use of trademarks.
+3. **Counterfeit Products:** Identifying and removing counterfeit goods, both online and offline.
+4. **Social Media Impersonation:** Removing fake accounts and posts impersonating brands or individuals.
+5. **Fake Job Posts:** Addressing fraudulent job listings and recruitment scams targeting individuals.
+6. **Phishing and Data Breaches:** Investigating domains/platforms involved in phishing attacks or data theft.
+7. **Illegitimate Applications:** Acting against apps that infringe copyrights or misuse APIs from legitimate platforms like Spotify or YouTube.
+8. **Copyright Violations in Educational Material:** Tackling websites distributing pirated textbooks and study guides.
+9. **Corporate Espionage:** Investigating insider leaks of proprietary software or data.
+10. **Unauthorized Sports Streaming:** Dismantling platforms streaming live matches without authorization.
+
+Handling Cases Involving Foreign Entities (e.g., DNR in the USA)
+When dealing with a foreign entity like a Domain Name Registrar (DNR) based in the USA, MIPCU focuses on tracing links to India, such as:
+- **Local Subsidiaries or Operations:** Investigating whether the DNR has a subsidiary, office, or operational ties in India.
+- **Payment Gateways:** Tracing payment gateways used by infringers to determine if they involve Indian banks or platforms.
+- **Hosting Services:** Checking if the content is hosted on servers with Indian ties or using intermediaries based in India.
+- **User Base and Impact:** Analyzing whether the infringement significantly impacts Indian stakeholders or users.
+Once a connection to India is identified, MIPCU coordinates with Indian legal frameworks and law enforcement agencies to enforce action. For aspects outside its jurisdiction, it escalates the case to central authorities for international coordination.
+
+Limited Enforcement Outside Maharashtra
+MIPCU operates under the Maharashtra Cyber Crime Cell, focusing primarily within Maharashtra. However, its actions can extend beyond the state when:
+- **Collaborating with Other States:** MIPCU works with cybercrime units in other states for cross-border activities within India, as seen in the Thop TV case.
+- **Central Government Assistance:** For national or international cases, MIPCU collaborates with central agencies like the CBI or Interpol.
+- **Digital Platforms and Hosts:** Notices sent to global platforms like Facebook, Google, and others ensure content removal regardless of geographical boundaries.
+
+Advantages of MIPCU
+Cost-Effective
+
+Significant savings compared to legal fees.
+Quick Resolution
+
+Faster enforcement actions save valuable time.
+Long-Term Benefits
+
+Actions lead to sustainable results rather than temporary solutions.
+Combined Strength of Law Enforcement and Private Expertise
+
+Operates with the authority of law enforcement agencies and the dedication of private organizations.
+Collaboration with Government Agencies and Intermediaries
+
+Ensures seamless cooperation, enhancing the overall impact of enforcement.
+
+Data and Tone:
+The bot uses both uploaded files and web-based sources to provide information dynamically. It maintains a formal and professional tone with slight legal undertones, similar to the communication style of a high-ranking police officer.
+
+Note: Pirates Alert is the exclusive partner working with MIPCU to provide these services.
+
+In any response do not mention Pirates Alert and about pricing. It should be mentioned only if asked about partner.
+
+
+
+Brands Using MIPCU for Brand production
+
+Music Industry 
+1. Sony Music
+2. Warner Music 
+3. Belive Music
+4. Saregama
+5. Tip Music
+6. Universal Music
+7. Aditya Music
+8. Zee Music
+9. Times Music
+
+OTT 
+1. Jio
+
+Studio
+1. Viacom 18
+
+Bank
+1. Axis Bank
+2. HDFC bank
+3. RBL Bank
+
+Real etate
+1. Godrej Properties
+2. L&T reality
+3. Prestige Reality
+
+Broking Firm
+1. Angel One
+
+
+NEWS ARTICLES /CASE STUDIES
+News Article: 
+Digital, Media
+ Campaign India Team | May 31, 2022
+ Viacom18 pursues legal action against
+ Subhanjan Kayet for the pirated platform Thop
+ TV
+ The accused is charged with technical manipulation, illegal streaming and
+ telecasting contents from Viacom18’s channels and its OTT platform- Voot
+ Subhanjan Kayet has been arrested for his involvement in a pirated website/platform named
+ Thop TV. 
+The accused was arrested for the development of the software, technical manipulation, illegal
+ streaming and telecasting contents from Viacom18’s channels and its OTT platform – Voot.
+ On 23 May 2022, Kayet had a court hearing at Esplanade Court, Mumbai wherein the court
+ sentenced him to five days of police custody considering the severity of the offence and upon
+ request of the counsel appearing for the state.  
+Furthermore, the Maharashtra Cyber Crime Cell has also frozen his bank account in which he
+ has purportedly received the illegal proceeds of unlawful activities. 
+A year ago, in May 2021, The Maharashtra Cyber Police had arrested Satish Venkateshwarlu,
+ a Hyderabad based engineer who runs Thop TV. Venkateshwarlu, was arrested after
+ Viacom18 issued a complaint with the Maharashtra Cyber against the mobile application,
+ stating that the app was transmitting the network’s content without authorisation at a
+ discounted price. 
+Viacom18 and the TV18 network aspire to persist in the fight against market threats
+ associated with piracy and aim to protect their channel’s content using all legal methods
+ available. 
+Sanjay Shintre, superintendent of police, Maharashtra Cyber Crime Cell, Mumbai, said,
+ “Special anti-piracy unit MIPCU (Maharashtra Intellectual property Crime Unit) arrested
+ accused Subhanjan Samiran Kayet from Gobardanaga Harbra, 24 Paragana, West Bengal on
+ 22 May 2022 as he appears to be the lead developer of the THOP TV app. We have sufficient
+ evidence regarding this.”
+ A spokesperson from Viacom18, said, “We are thankful to the Maharashtra Cyber Crime Cell
+ for continuing this action against piracy. It is important to make the message clear that
+ operating or abetting a business of infringement is a serious offence which affects the
+ creative community at large. The perpetrators will be found and brought before the law.”
+
+
+ News Article: 
+ Viacom18 pursues criminal action against cartels of
+ pirates
+ The Cyber Crime Cell has arrested an accused for illegally streaming and telecasting contents from Viacom18’s channels and its OTT
+ platform Voot
+ by 
+exchange4media Staff
+ Published: Jun 1, 2022 10:26 AM  | 2 MIN READ
+
+ Viacom18 Media Pvt. Ltd. is working closely with the Maharashtra Cyber Crime Cell, Mumbai, In its continuous
+ fight against digital piracy and infringing usage of content. The Cyber Crime Cell has arrested Subhanjan Kayet
+ for his involvement in the pirated websites/platform named Thop TV. He was accused for the development of
+ software, technical manipulation, illegal streaming and telecasting contents from Viacom18’s channels and its
+ OTT platform – Voot.
+ He was produced before Esplanade Court on 23rd May 2022 wherein the court has sent him to five days’ police
+ custody considering the severity of the offence and upon request of the counsel appearing for the state. The
+ Maharashtra Cyber Crime Cell has also frozen his bank account in which he has purportedly received the illegal
+ proceeds of unlawful activities. He was apprehending his arrest for the last few months after his bail applications
+ were rejected by the courts in Kolkata and Mumbai.
+ Superintendent of Police, Maharashtra Cyber, Mumbai, Sh Sanjay Shintre said, “Special anti-piracy unit MIPCU
+ (Maharashtra Intellectual property Crime Unit) arrested accused Subhanjan Samiran Kayet from Gobardanaga
+ Harbra, 24 Paragana, West Bengal on 22nd May 2022 as he appears to be the lead developer of the THOP TV
+ app. We have sufficient evidence regarding this.
+
+
+ News Article: 
+  OTT platforms take Legal Route against Copy Pirates
+ SS Rana & Co
+ India June 13 2024
+ In today’s fast pacing world were weekending is all about binge watching our favorite shows and movies, OTT
+ platforms have become an integral part of our leisure time, shaping our plans as we eagerly anticipate the next
+ episode or blockbuster release. With a vast array of content of our fingertips, OTT platform have transformed the
+ way we unwind and entertain ourselves, offering endless options for our entertainment it also becomes essential
+ to recognize the importance of protecting these experiences from piracy and ensuring that we can continue to
+ enjoy our movies and binge worthy shows. In the case of Universal City Studios LLC & Ors. v.
+ MOVIES123.LA & Ors[1], the Hon’ble Delhi High Court granted a dynamic + injunction against rogue website
+ and restraining them from hosting plaintiffs’ copyrighted works, without any license or authorization.
+ Digital Piracy and OTT Platform
+ Over the years challenges of piracy have sky rocketed since the growth of digital media, study suggests that
+ online streaming platforms lose nearly 25%- 30%[2] of their overall revenue to “Copy Pirates”. To prevent the
+ chaos caused by piracy OTT platforms and Entertainment companies from time to time have sought legal
+ remedy to protect their rights and revenues from being affected by piracy.
+ Recently in the case of Universal City Studios LLC & Ors. v. MOVIES123.LA & Ors. leading global
+ entertainment companies have filed a suit against Defendants (rogue websites) for hosting, carrying and
+ disseminating content, consisting of plaintiffs’ copyrighted works, without any license or authorization. The
+ Hon’ble Delhi High Court passed ex-parte ad interim injunction as also a dynamic injunction against the
+ Defendants and restrained Defendants (No 1 to 26) from “communicating to the public, hosting, storing,
+ reproducing, streaming, broadcasting, re-broadcasting, causing to be seen or heard by public on payment of
+ charge and/or making available for viewing plaintiffs and further directed the ISPs (Defendant No 27 to 35) to
+ block access to these infringing websites tabulated above, within 48 hours of receipt of the court order”.
+ Similarly in a recent case of Warner Bros. Entertainment Inc. & Ors. v. Doodstream.com & Ors eight major
+ entertainment companies i.e., Warner Bros. Entertainment Inc.; Amazon Content Services LLC; Columbia
+ Pictures Industries, Inc.; Disney Enterprises, Inc.; Netflix US, LLC; Paramount Pictures Corporation; Universal
+ City Studios Productions LLP; and Apple Video Programming LLC had filed a suit against the Defendants
+ (Doodstream.com, doodstream.co and dood.stream respectively along with associated websites) who are
+ considered as Rouge Cyberlocker Website. According to the plaintiffs these Rouge Cyberlocker websites were
+ “providing an infrastructure deliberately to encourage hosting, uploading, streaming and downloading of
+ copyrighted materials without authorization”.[3] Taking cognizance of the case the Hon’ble Delhi High Court
+ directed the Defendants to “take down all listings of plaintiff’s content within 24 hours and further directed the
+ Defendants to disable all features that allows regeneration of links and reuploading the infringing concept post
+ takedown”.[4]
+Similarly in the case of Universal City Studios LIC & Ors. v.Fzmovies.net & Ors[5] the Plaintiffs filed the case
+ against defendants (rogue websites) who were indulging in online piracy by making original content of Plaintiff
+ available to users for download and otherwise providing access to infringing and illegal content. It was further
+ contented that the evidence collected by the investigator showcase that the operators of the Defendants websites
+ are using known “pirate branding” to signal to users that the defendant websites are merely new iterations of
+ sites that have been blocked earlier. The Hon’ble Delhi High Court restrained the Defendants as well as their
+ mirror/redirects or alphanumeric variations from “streaming, hosting and making available to public the original
+ copyrighted content of Universal City Studios and other entertainment companies and further directed
+ Department of Telecommunications (DoT) and Ministry of Electronics and Information Technology (MeitY) who
+ were Defendant No. 50 & 51 in the suit to issue and directives to telecom services registered under them to block
+ the defendants website identified by the Plaintiff”.[6]
+ In another such instance the Universal City Studios LLC and Ors v. DotMovies.Baby and Ors[7], the Hon’ble
+ Delhi High Court while acting on the petition filed by 6 major OTT platforms has granted a “dynamic +
+ injunction” restraining rogue websites from streaming, downloading, and viewing of copyrighted content
+ without license and authorization of the owner.[8]
+ What are Cyber Lockers?
+ Pirated films on Cyberlocker websites provide a disadvantage to those who disseminate content illegally. Unfair
+ competition can hinder legal distributors and content producers from making investments in film production and
+ distribution, affecting the industry’s development and creativity
+ In the case of Universal City Studios LLC v Mixdrop.Co[9] the Plaintiff field a suit against defendants for
+ facilitating piracy through cyberlocker. The plaintiff in this case, present an ‘Expert Report’ provided by Mr.
+ Michael Walsh that discusses the concept of “cyberlocker” the report produced in court defined cyberlocker as
+ an “online data storage services which are purpose built for hosting and disseminating copyright infringing
+ material as also to incentivize the same, in contrast to conventional cloud storage services which are targeted
+ towards storing innocuous personal and business data and further contented that Cyberlockers promote active
+ sharing of links to the uploaded content and by extension, downloading of the content”[10] Moreover, the
+ Plaintiff contended that ‘Cyberlocker’ and ‘Referral websites’ (Defendant) directs users to access unauthorized
+ copyrighted materials owned by Plaintiffs for consumption and distribution, thereby causing substantial harm to
+ the Plaintiff IP rights. Taking swift action of the case the Hon’ble Delhi High Court opined that “the Defendant’s
+ Cyberlocker Websites, the Server and Referral Websites, are designed to incentivise hosting, uploading, storing,
+ sharing, and downloading of copyright material, and are liable for committing/ facilitating the infringement of
+ Plaintiffs’ Original Content and held that Piracy via Cyberlocker websites results in substantial financial losses
+ for film companies.”[11].
+ Indian Laws governing Online Piracy
+ Copyright Act, 1957
+ Section 51 of the Copyright Act, provides that a copyright work is deemed to be infringed if any person without
+ obtaining license from the original owner does anything which is in contravention of the Act. Sub-section (b)
+ further provides that any person who offers/makes sale, hire, distributes or reproduces a literary, dramatic,
+ musical or artistic work owned by the Copyright owner without authorization shall be deemed as infringement.
+ According to Section 63 of the Act copyright infringement is a criminal offence and any person who knowingly
+ infringes copyright would be punished with imprisonment for six months, which can extend to three years, with
+ a minimum fine of Rs. 50,000, which can extend up to Rs.2 lakhs.
+Ministry of Internet & Broadcasting Initiative on Controlling Piracy
+ In 2023, the Ministry of Information and Broadcasting (hereinafter referred as I&B) had appointed 12 nodal
+ officers to act on complaints received for piracy (Read More) According to the press release The newly added
+ provision especially, Section 6AB provides that “no person shall use or abet the use of an infringing copy of any
+ film to exhibit to the public for profit at a place of exhibition which has not been licensed under this Act or the
+ rules made thereunder; or in a manner that amounts to the infringement of copyright under the provisions of the
+ Copyright Act 1957 or any other law for the time being in force” and Section 7(1B)(ii) provides that the
+ “Government may take suitable action for removing/disabling access to such an infringing copy exhibited/hosted
+ on an intermediary platform in a manner in contravention to the section 6AB”[12]
+ State Level Initiative to curb Piracy
+ Maharashtra Intellectual Property Crime Unit
+ In order to prevent piracy in the State Level in Mumbai, the Maharashtra Cyber Wing established the
+ Maharashtra Intellectual Property Crime Unit (MIPCU) in 2017. The main objective behind establishing the
+ body was to fight and reduce cybercrimes and the rampant growth of Online Piracy[13]. In 2022, the
+ entertainment company Viacom 18 approached filed a complaint against the pirated website “Thop TV” acting
+ swiftly on the complaint filed the cell arrested Subhanjan Kayet the alleged developer of Thop TV for illegal
+ streaming of copyrighted content of Viacom 18’s channel and OTT platform Voot[14].
+ Conclusion
+ The issue of online piracy on OTT platforms remains a significant concern, impacting both content creators and
+ streaming services. However, courts have increasingly recognized the rights of OTT platforms under copyright
+ laws, taking measures to.
+
+News  Article:
+MCDCU: Protecting Vital Information of its
+ Stakeholders
+ June 14, 2020
+ The Maharashtra Cyber Digital Crime Unit (MCDCU) which was initiated in August
+ 2017, is a first-of-its-kind Unit in South Asia where industry and Government are
+ working together to protect intellectual property, especially addressing the issue
+ of digital piracy faced by the Media & Entertainment (M&E) industry. It is
+ estimated that the Unit will help the Government earn $2.5 billion annually in the
+ form of taxes from the M&E industry which is currently facing loss due to digital
+ piracy. The Indian M&E industry is estimated to have lost 60,000 jobs every year
+ due to piracy. The Unit will also help the government curb the unemployment ratio
+ and increase job opportunity for Young India.
+ Action Points Undertaken by Police for Disruption of Pirated Domains
+ Action 1: Intimation to a website by the Unit, call for information and records and
+ redressal of options.
+ Action 2: Notice to domain registrar and web host for domain name suspension, call for
+ information and records, and redirect traffic to Maharashtra Intellectual Property Crime Unit
+ (MIPCU) message.
+Action 3: Submission to the Ministry of Electronics and
+ Information Technology (MeitY) as per prescribed format to
+ get block order and coordinate with National Internet
+ Exchange of India (NIXI) to suspend India ccTLDs websites.
+ Action 4: Notice to advertisers and brand owners to stop
+ their advertisements fuelling the websites.
+ Action 5: Notice to payment gateways to stop facilitating
+ these IWL websites.
+ Action 6: Arrest and seizure actions and criminal prosecution.
+ Key Benefits to Public and Government
+ MDCU team scanned the internet using popular properties of TV, Movie & Music
+ industries for pirated content.
+ MCDCU has suspended 235 websites, which were indulging in piracy of movies, TV,
+ sports and music content.
+ 12 advertisement networks suspended the services of pirate websites.
+ Advisory issued to over 34 brand owners to desist their support to piracy.
+ Suspension of these websites diverts ~186 million users to official platforms.
+ Helped the Media & Entertainment industry to save INR 120.7 Cr. by suspending 235
+ websites.
+ MDCU team prepared Infringing Website List (IWL) based on the websites indulging in
+ piracy for further enforcement actions, which now consist of 4000 pirated websites.
+ IWL involves thorough detailing of each website based on over 32 parameters related to
+ the ecosystem of a website and rigorous evidence collection that the website is
+ committing piracy for further action.
+ Key Stakeholders
+ Govt. of Maharashtra/ Maharashtra Cyber – Review, Control & Head of the Unit
+ Maharashtra Cyber (Govt. of Maharashtra) is heading and controlling the MCDCU.
+ Maharashtra Cyber leads the Unit and provides timely reviews providing a successful
+ path for the unit.
+ As a legal entity (Police Services), it ensures the result-oriented work of the MCDCU.
+Industry Association and Key Stakeholders – Reviews, Financial Support, Legal
+ Support
+ MCDCU work with stakeholders across the media and entertainment sector as well as
+ other industries leveraging digital IP.
+ Their timely reviews for the project act as a way forward towards the progress of the
+ project.
+ MCDCU also makes awareness about online piracy to various stakeholders (ISPs, domain
+ registrars, registry operators, law and judiciary, and the public, etc.).
+ Key stakeholders provide venture capital for the project.
+ Stakeholders contribute towards the main entity of the project i.e. legal support, to
+ initiate legal action on the pirated websites.
+ Expert Partner – Provide People, Process and Technology
+ Expert partner is providing quality manpower and focus on the best results of MCDCU.
+ By proving the best quality software and hardware, it makes sure that MCDCU is
+ providing the best results.
+ Procedural/ Administrative/ Legislative Changes
+ As per government resolution dated 5th January 2016,
+ Maharashtra Cyber is designated as the Nodal Agency for
+ the State of Maharashtra to coordinate with all
+ enforcement and criminal actions against cybercrimes
+ which incorporates online piracy. In accordance, Maharashtra Cyber needs to establish
+ MCDCU for all online piracy crimes in Maharashtra.
+ MCDCU handles all the cases related to digital piracy. As the nodal agency, Maharashtra
+ Cyber forwards the technical details and case-related information to the State Police. The
+ Police then act on priority and take necessary actions instructed by MCDCU.
+ Maharashtra Cyber collaborates with movies, music, TV, software, game, books
+ publishing and e-commerce industries as well as private stakeholders who want to be
+ part of this Unit.
+ If any of these private stakeholders want to contribute financially and provide specialized
+ resources to support the unit, they are allowed to be associated with MCDCU. These
+ private stakeholders also carry their research on online piracy and prepare the list of
+ pirate websites. To protect the digital space from piracy, MCDCU and these private
+ stakeholders can share data.
+ Financial Implications/Cost Estimates
+For smooth operation of the Unit, Maharashtra Cyber had estimated a cost to assist the
+ MCDCU, which would need approval for the financial budget by the Government.
+ They had estimated that 10% of the total capital expenditure (CapEx) cost of procuring
+ hardware and other miscellaneous will be required to be kept for maintenance of the
+ same. The software’s cost will also depend on license fees, including customization and
+ development of new modules. There will be a three-year technology refresh cycle which
+ will cost ~ 50% of Capex.
+ There are two types of package solutions which Maharashtra Cyber has proposed to the
+ Government.
+ Package 1 (With Enterprise Solutions):
+ This investment package includes enterprise-level solutions
+ such as IBM Watson, Anti-Piracy Monitoring Solutions,
+ Torrent 
+Tracking 
+and 
+Darkweb Network Monitoring
+ Solutions. By using these solutions, the Unit will be able to
+ investigate and identify key areas of the digital world.
+ Package 2 (Without Enterprise Solutions):
+ This investment package will not include key enterprise-level solutions such as IBM Watson,
+ Anti-Piracy Monitoring Solutions, Torrent Tracking and Dark Web Network Monitoring 
+Solutions.
+
+
+
+News Article: 
+Viacom18 pursues criminal action
+ against piracy
+ Cyber Crime Cell arrested Subhanjan Kayet for his involvement in the pirated
+ websites/platform named Thop TV.
+ Written by BrandWagon Online
+ May 31, 2022 16:22 IS
+
+  It is important to make the message clear that operating or abetting a business of
+ infringement is a serious offence, Viacom18’s spokesperson said.
+ Viacom18 Media Pvt. Ltd has partnered with Maharashtra Cyber Crime Cell,
+ Mumbai to ght against digital piracy and infringing usage of content. It is to
+ be noted that the Cyber Crime Cell arrested Subhanjan Kayet for his
+ involvement in the pirated websites/platform named Thop TV. He was accused
+ for the development of software, technical manipulation, illegal streaming and
+ telecasting the contents from Viacom18’s channels and its OTT platform – Voot.
+ “Special anti-piracy unit MIPCU (Maharashtra Intellectual property Crime Unit)
+ arrested accused Subhanjan Samiran Kayet from Gobardanaga Harbra, 24
+
+  Paragana, West Bengal on May 22, 2022 as he appears to be the lead developer
+ of the THOP TV app. We have suf cient evidence regarding this,” Sanjay
+ Shintre, superintendent of police, Maharashtra Cyber, Mumbai, said.
+
+
+ He was produced before Esplanade Court on May 23, 2022 wherein the Court
+ sent him to ve days police custody considering the severity of the offence and
+ upon request of the counsel appearing for the state. The Maharashtra Cyber
+ Crime Cell has also frozen his bank account in which he has purportedly
+ received the illegal proceeds of unlawful activities.
+
+  “It is important to make the message clear that operating or abetting a
+ business of infringement is a serious offence which affects the creative
+ community at large. The perpetrators will be found and brought before law,”
+ Viacom18’s spokesperson stated.
+
+
+News Article: 
+Developments Over the Last Five Years India announced its first National IPR policy in 2016. Today, the
+portfolios of Patents, Designs, Trademarks, Copyright.
+
+ implementing India’s National IPR Policy. It spearheads the
+ Indian government’s efforts to streamline IP processes, increase
+ IP awareness, promote commercialization, and enhance
+ enforcement.
+ Over the past five years, the Indian government has taken
+ positive steps to strengthen its IPR regime, such as efforts to
+ modernize its IP offices; increase manpower; use IT and
+ technology in e-filing of applications; deliver certificates of
+ grant and registration of patents, trademarks and designs in a
+ digital format; reduce the number of trademarks forms; use
+ video conferencing for hearing of IP applications; create
+ expedited examination procedures; and spread awareness on IP
+ issues.
+ DPIIT, in association with the Federation of Indian Chambers of
+ Commerce and Industry, launched an IPR enforcement toolkit to
+ aid police with handling IP crimes, in particular counterfeiting
+ and piracy. The Maharashtra IP Crime Unit (MIPCU), formerly
+ MIPCU
+ Maharashtra Cyber Digital Crime Unit (MCDCU), was established
+ in August 2017, as a public-private partnership to enable
+ industry to work directly with state police to combat theft of IP
+ on digital platforms particularly digital piracy. The Unit serves
+ as a potential model for digital enforcement that other Indian
+ states can emulate and replicate.
+ The Ministry of Education’s Innovation Cell has also taken steps
+ to foster innovation and promote IP literacy and awareness in
+ classrooms across the country.
+ 
+
+News Article:
+
+ FICCI Frames ’17: Maharashtra to form IP crime unit to fight online piracy.
+
+  FICCI Frames ’17: Maharashtra to form IP crime unit
+ to ght online piracy
+ MUMBAI: Well, well. The Indian media industry and the government are nally getting serious about
+ content piracy. After Telangana Intellectual Property Crime Unit (TIPCU), Copyright Force and the
+ government-mandated Copyright Board, Maharashtra state is all set to get Maharashtra Intellectual
+ Property Crime Unit, which may be called MIPCU.
+ Announcing the go-ahead for MIPCU, a body that would be a joint endeavor of the entertainment industry
+ and the state government, Inspector General of Maharashtra Police (Cyber) Brijesh Singh (in the picture)
+ said, however, the initiative would have to be backed by the industry players too in terms of resources to
+ e ectively ght cyber crime and online piracy.
+“I would want it to be set up under a public-private partnership model and want the industry to come
+ forward and help me achieve this. I want the industry to come and tell me that this is what we need and we
+ will then help them. There is a commitment from our side,” Singh said while delivering an address at FICCI
+ Frames 2017 session themed `Decoding the Pirate Economy in Interconnected World: From Noise to
+ Action.’
+ Though Singh, who was also slightly skeptical of the losses in terms of revenue that were often quoted by
+ the entertainment industry, said that if the industry was serious, so were the law enforcement agencies.
+ Pointing out that it’s often seen that the lm industry’s piracy concerns were “limited” to the rst seven
+ days of a lm’s release, he added, “I think this issue needs us to be more serious. I want the industry to
+ come to us to build this sustainable and long-term partnership."
+ Motion Pictures Association of America’s Indian unit (MPA) and the Film and Television Producers Guild of
+ India have joined hands to ght the menace of online piracy. After discussing the idea of MIPCU with the
+ chief minister of Maharashtra and MPA last month, the state government formally okayed formation of a
+ unit to ght cyber crimes, especially online piracy. O ine o ences regarding this issue will be dealt by the
+ regular police units.
+ The budget of this new proposed unit will depend on what kind of technology it plans to o er for a
+ solution. The entire idea is to co-create a global facility, Singh later elaborated and added that the unit's
+ launch was dependent on the industry's long-term commitment in terms of negotiating that space.
+ Commenting on the proposal to form MIPCU, Viacom18 group general counsel Sujeet Jain said the
+ entertainment and TV industry would back any such move as long as results were delivered irrespective of
+ structures and modalities.
+ Incidentally, some months back, as reported by indisntelevision.com, MPA, broadcasters and FICCI had
+ joined hands to announce formation of Copyright Force to set agendas for e ective safeguarding of
+ Intellectual Property Rights (IPR) policy and engage with the government.
+ To give an international perspective, TIPCU, Copyright Force and the proposed MIPCU have been seemingly
+ inspired by the Police Intellectual Property Crime Unit (PIPCU) of the UK , which is a specialist national
+ police unit dedicated to protecting the UK industries that produce legitimate, high quality, physical goods
+ and online and digital content from intellectual property crime.
+ PIPCU is operationally independent and launched in September 2013 with £2.56million funding from the
+ Intellectual Property O ce (IPO) of the UK government until June 2015. It was announced in October 2014
+ that PIPCU will receive a further £3 million from the IPO to fund the unit up to 2017. The unit is dedicated
+ to tackling serious and organised intellectual property crime (counterfeit and piracy) a ecting physical and
+ digital goods (with the exception of pharmaceutical goods) with a focus on o ences committed using an
+ online platform.
+
+
+News Article: 
+
+Copyright piracy and cybercrime: enforcement challenges in India
+
+ By Arpan Banerjee and Neil Gane, Alliance for Creativity and Entertainment (ACE), Hong Kong (SAR), China
+ In recent years, concerns around online content piracy have increased around the world. The reasons are
+ well-known: a rise in illicit streaming platforms and torrent websites; errant web hosting services that ignore
+ piracy on their servers; and the ease and anonymity o ered by certain online intermediaries. A further
+ hazard arises from linkages between piracy and hi-tech cybercrimes. While governments worldwide are
+ grappling with these obstacles, a country that merits special attention is India — where a globally prominent
+ lm industry is hindered by widespread piracy and a challenging enforcement environment.
+
+“Malware is the starting point of all our cyberattacks, whether it is nancial fraud, piracy, data theft or an attack against a strategic sector. Everything starts with luring
+ or clickbaiting,” says Lieutenant-General Rajesh Pant (above), National Cyber Security Coordinator, India. (Photo: Courtesy of Lieutenant-General Rajesh Pant)
+ The Piracy-Cybercrime Nexus
+ In 2010, the Indian government’s Committee on Piracy (CoP) linked piracy with large revenue and job losses.
+ The CoP presciently observed that the advent of smartphones and 3G would make it “much easier to
+ undertake all kinds of lm piracy.” Indeed, today, premium streaming services in India are routinely victims
+ of mass piracy. Like in other countries, piracy syndicates in India pro t mostly through user subscription fees
+ or advertising revenues. The former method, though brazen, is self-explanatory. The latter method, however,
+ is more insidious, owing to the presence of high-risk advertisers promoting suspicious links. Research, by
+ McAfee, tracking pirated Indian movies and shows, has agged such links for attempting “to install malware
+ or steal passwords and personal information.”
+ For further insights, we interviewed Lieutenant-General Rajesh Pant, a noted military cybersecurity veteran
+ now advising the Indian government as National Cyber Security Coordinator (NCSC). Pant explained:
+ “Malware is the starting point of all our cyberattacks, whether it is nancial fraud, piracy, data theft or an
+ attack against a strategic sector. Everything starts with luring or clickbaiting.”
+ Pant listed some recent government initiatives meant to address the threat, including a National Malware
+ Repository and the Indian Cyber Crime Coordination Centre (I4C). Notably, the I4C includes a 
+National Cyber
+ Crime Reporting Portal, where cases of piracy — with or without a malware nexus — may be reported. Pant
+ added that piracy and malware attacks were separately punishable under the Copyright Act 1957 and the
+ Information Technology Act 2000.
+ Criminal Enforcement
+ Despite the impressive expertise of the NCSC and I4C, India’s federal make-up means that the responsibility
+ to investigate piracy generally lies with state governments. Thus, the success of anti-piracy enforcement in
+ India is often determined by subnational rather than national e orts. Here, the CoP had observed that piracy
+ is “very low in terms of priority in the radar of law enforcement agencies.” Similarly, the International
+ Intellectual Property Alliance has reiterated that criminal enforcement in India is 
+“very daunting”, and
+ marked by 
+“lack of appetite by local enforcement and signi cant time delays”.
+
+Pursuing pirates outside major cities appears to be particularly challenging. For example, we examined the
+ records of a high-pro le piracy case in the city of Jabalpur (
+ Rahul Mehta v State of Madhya Pradesh 
+(2015)). In
+ 2015, the Jabalpur police had arrested a piracy syndicate responsible for pirating Baahubali, one of the
+ highest grossing Indian movies of all time. The accused were granted bail by the trial court. However, the
+ case is still pending and there is no record of a hearing after 2017. Gallingly, the accused were 
+arrested
+ again, in Hyderabad, for pirating Baahubali 2, the lm’s equally successful sequel. While in the recent case of
+ Knit Pro International v State of Delhi (2022), the Indian Supreme Court declared criminal copyright
+ infringement as a “non-bailable” and “cognizable” o ence (i.e. one is arrestable without warrant and only a
+ court can grant bail), the ground-level impact of the decision is unclear.
+ (PHOTO: VINATHA SREERAMKUMAR / UNSPLASH)
+ Many right holders see the bene ts of using criminal
+ prosecutions as deterrents.
+ The MIPCU Model
+ At the state level, a novel enforcement model exists in the form of a police unit in the state of Maharashtra
+ (whose capital, Mumbai, is the hub of Bollywood). The Maharashtra government established the
+ Maharashtra Intellectual Property Crime Unit (MIPCU) in 2017 to provide right holders better enforcement.
+ The MIPCU was established as a division of Maharashtra Cyber, the state police’s cybercrime wing, and
+ structured as a public-private partnership. To learn more, we visited the o ce of Maharashtra Cyber and met
+ with the o cers currently at the helm: Yashasvi Yadav, Special Inspector General of Police, and Sanjay
+ Shintre, Superintendent of Police. We also met with a team of computer professionals, who make up the
+ MIPCU’s engine room, and interviewed them via a written questionnaire (which they preferred to answer
+ collectively, as “Team MIPCU”).
+ Yadav acknowledged that piracy was “rampant” in India. He also con rmed linkages between piracy and
+ malware, stating: “Certain malware providers use pirated content as a trap. Their main business is not piracy.
+ Their main intention is to infect computers, steal data or install spyware. People are prone to click on
+ freeware and free content.” Yadav added that it was “not an easy task” to track down such malicious actors,
+ who frequently masked their footprints using technologies like VPN and Tor browsers.
+
+Shintre, however, pointed out that cybercriminals did occasionally slip up. He cited the 2021 case of ThopTV, a
+ popular piracy app funded by subscription fees. Apparently, ThopTV’s mastermind had inadvertently
+ disclosed his whereabouts, allowing Maharashtra Cyber to swoop in and arrest him. Interestingly, the arrest
+ had occurred outside Maharashtra, in Hyderabad. In May 2022, an accomplice was 
+arrested by Maharashtra
+ Cyber near Kolkata. Yadav and Shintre explained that Maharashtra Cyber could pursue pirates outside
+ Maharashtra if pirated content was being disseminated within Maharashtra. Such a move, however, is
+ contingent on registering a “First Information Report” (FIR) in Maharashtra. In other words, such action can
+ only take place when a copyright owner les a criminal complaint, after which the police prepare a report. 
+The onus of ling the complaint lies on the copyright owner.
+ Despite potential advantages, the MIPCU does have limitations. For a start, the MIPCU cannot directly shut
+ down piracy websites or apps. Such action is the administrative remit of the Indian 
+Ministry of Electronics
+ and Information Technology (MEITY). Further, Team MIPCU’s responses to our questionnaire indicate that the
+ unit relies heavily on voluntary compliance. In this regard, Team MIPCU listed many di culties, ranging from
+ non-compliant hosting services in “rogue geographies” outside India to “members-only” piracy platforms
+ hidden from public view.
+ Other limitations raised include sluggish takedown times over weekends, with some mobile apps taking up
+ to two weeks to act. Moreover, Yadav noted that despite the ubiquity of online piracy, right holders were not
+ registering enough FIRs with Maharashtra Cyber. “I have not seen more than a handful,” he remarked. Yadav
+ felt that this limited the police’s ability to escalate matters.
+ Many right holders, however, do see the bene ts of using criminal prosecutions as deterrents. In a separate
+ interview, Anil Lale, General Counsel of Viacom 18, informed us that Viacom 18 had led multiple complaints
+ with Maharashtra Cyber, including the FIR in the ThopTV case (for which Lale praised the MIPCU’s
+ “commendable action).”
+ Lale declined to comment on the strategies of other content media companies, but o ered some
+ suggestions as to why the number of FIRs may be low. He pointed to systemic problems with the legal
+ system and law enforcement, the di culty in prosecuting overseas-based pirates, and the tendency of many
+ right holders to prioritize (understandably) the removal of pirated content over the prosecution of o enders.
+ Lale also felt that, insofar as it is a state-level body, the MIPCU had inherently limited powers and resources.
+ Given these drawbacks, he suggested that the establishment of a larger, national body empowered to receive
+ and investigate complaints from across India might be more e ective.
+ The battle against online piracy in India (and beyond)
+ is […] weighed down by universal and local challenges.
+ Civil Enforcement
+ On the civil litigation front, the situation in India appears brighter. Many states in India have set up fast-track
+ courts, and the Delhi High Court has recently established an Intellectual Property Division. The Delhi High
+ Court’s approach towards online lm piracy (expertly summarized by Justice Pratibha Singh of the Intellectual
+ Property Division in a recent WIPO presentation [
+ PDF]) has been especially noteworthy. In the leading case of
+ UTV Software Communications Ltd. v 1337X.to
+ (2019), the court recognized “dynamic” injunctions (to preempt
+ pages from shifting across di erent URLs) and speci ed criteria to determine when to block “rogue websites”
+ (i.e. websites that "primarily or predominantly share infringing content).” Pant explained that MEITY o cials
+ meet regularly among themselves and with intermediaries to implement such blocking orders. The MEITY
+instructs the Department of Telecommunications to inform ISPs to carry out the blocking of an IP address,
+ which he notes can be done in “a matter of minutes.”  More recently, the Delhi High Court, in 
+Neetu Singh v
+ Telegram (2022), directed Telegram to disclose information about uploaders of pirated content.
+ However, by the time a court order is passed, and nally executed, the proliferation of pirated content may
+ have already occurred. This shortcoming (which is not peculiar to India) is especially relevant for pirated
+ streams of live entertainment and sports events. Legal costs, which may be prohibitively expensive for
+ smaller out ts, present another major hurdle in the civil litigation process.
+ The Way Ahead
+ The battle against online piracy in India (and beyond) is evidently weighed down by universal and local
+ challenges. The universal challenges range from the technological sophistication of cybercriminals to
+ problems of international jurisdiction. The local challenges, however, chie y encompass systemic problems
+ with law enforcement agencies and the criminal justice system. Realistically, it is perhaps only the latter issue
+ that the Indian government can address.
+ The CoP has observed that piracy is inappropriately viewed as “a low-risk high-reward” crime in India, with
+ law enforcement agencies challenged with tackling “heinous criminal activities.” However, if the linkages
+ between piracy and malware are better highlighted ¾ through research studies, symposiums, and police
+ training workshops ¾ piracy should automatically rise in the pecking order of serious crimes and receive
+ greater attention. This task could plausibly be undertaken by the Cell for IPR Promotion and Management
+ (CIPAM), a training and awareness cell launched by the Indian government in 2016. CIPAM’s 
+website shows
+ that it has organized several educational workshops and involved leading Bollywood stars in an anti-piracy
+ campaign.
+ Finally, many state governments may consider setting up their own IP cybercrime units. Operated in a
+ targeted and cost-e ective manner, such units would likely attract the endorsement and support of industry.
+ In prioritizing the certainty of punishment over its severity, these units would also, no doubt, o er a service
+ that most right holders would like to see in place.
+
+
+News Article: 
+
+ MAHARASHTRA’S BIG PUSH TO ELIMINATE PIRACY
+
+ In 2016, Maharashtra saw a massive growth in cyber crimes. The government
+ responded by creating the Maharashtra Cyber Digital Crime Unit (MCDCU)
+ and becoming the rst state to launch a cyber police station in every district.
+ A year later, the Maharashtra Intellectual Property Crime Unit (MIPCU) was
+ created to speci cally address intellectual property crimes. As more of our
+ personal, business, and governmental affairs go digital, the more critical it is
+ that we have a robust Digital Crimes Unit.
+ Maharashtra Cyber Security Project
+ The central government is committed to taking cybercrime seriously, but this
+ needs to be implemented at a state level. As a result, the government of
+ Maharashtra aimed to uphold this aspect of the law by creating the
+ Maharashtra Cyber Security Project. In addition to creating cyber police
+ stations in every district, the Maharashtra Cyber Project has the objective of
+ creating cybercrime investigation labs, training all police of cers to identify a
+ cybercrime, and also create awareness among citizens of Maharashtra.
+ What is a Cyber Crime?
+ Cyber-crimes cover a broad spectrum of criminal activity that occurs online
+ including: website hacking, cyber stalking, cyber pornography, software
+ piracy, and online fraud. For the entertainment industry, the biggest cyber
+crime – and one we are actively ghting every day – is that of online piracy.
+
+
+ Maharashtra Intellectual Property Crime Unit (MIPCU)
+
+ The Film & Television Producers Guild of India and the Motion Pictures
+ Association of America – India (MPA) played a huge part in the creation of
+ MIPCU. The two met with Maharashtra’s Chief Minister, and as a result the
+ state government agreed to the formation of MIPCU. We needed this unit
+ because while we already had anti-piracy laws in place, there was no proper
+ machinery to implement them. With the MIPCU we have a team in place with
+ the skillset, know-how, and resources to tackle piracy crimes effectively.
+ Taking Down Sites Pirating Content
+ One of the biggest responsibilities the Digital Crime Unit has is to take down
+ websites that offer pirated movies, music and other digital content.
+ Within a month of setting up the Maharashtra Cyber Digital Crime Unit in
+ August 2017, we identi ed 9000 websites where illegal content was being
+ uploaded and distributed. Later, we shortlisted 1,300 sites to take legal
+ action against.
+
+ Since April 2018, we have suspended 29 pirate websites. These sites were
+ illegally distributing many Bollywood songs and movies. Thanks to the
+ Digital Crime Unit these sites are no longer accessible anywhere in the
+ world. These sites had tens of millions of viewers each month. By our
+ estimates, taking these sites down will result an additional Rs. 8 crore
+ revenue per month for the lm industry by shifting users of these sites to
+ of cial platforms. It’s important to recognize that by doing this, we will not
+ only be protecting the lm industry’s revenue, but also adding to taxable
+ revenues which will bene t all citizens of Maharashtra.
+ Game of Thrones Leakage
+ One of the most notable crackdowns was that of Game of Thrones, Season
+ 7, Episode 4 which leaked online two days prior to its US release. Star India
+ and Novi Digital led the complaint. With the collective efforts of Cyber &
+ PAW, Government of Maharashtra, and the of ce of DCP (Cyber), BKC,
+ Mumbai, we were able to gather and analyze information and material and
+ make four arrests.
+ By making these arrests we are able to instill condence in the Indian and
+ international entertainment industry. Foreign production houses looking to
+ collaborate with Indian companies for content creation need to know that
+ they’re creative property will be protected. It also sends a clear message
+ across industries that those who violate the law will pay the price.
+
+ The Continued Fight Against Online Piracy
+ Prior to the creation of these special units, individual producers would have
+ to ght online piracy through John Doe court orders. As a result, they might
+ be able to block their own content from appearing on some of these
+ websites, but often it was a “too little too late” situation as far as revenues
+ were concerned. Now, the Digital Crime Unit is able to expedite the process
+ as well as proactively ght digital crime even before a complaint is led.
+ If other states follow suit in creating their own digital cells, we could more
+ effectively tackle this vast problem. With the support of the central and state
+ government, the entertainment industry, and other stakeholders such as
+ MPA, we will to continue the ght against illegal digital distribution of content.
+

@@ -28,7 +28,13 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Open Dashboard</Button>
+          <a
+            rel="noreferrer noopener"
+            href="http://localhost:3000"
+            target="_blank"
+          >
+            <Button className="w-full md:w-1/3">Open Dashboard</Button>
+            </a>
 
           <a
             rel="noreferrer noopener"

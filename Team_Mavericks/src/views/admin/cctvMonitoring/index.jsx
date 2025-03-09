@@ -14,9 +14,21 @@ export default function Settings() {
   const [cameraData, setCameraData] = useState([
     {
       name: "Site 1",
-      prediction_classes: ["Person", "Gloves", "Helmet"],
+      prediction_classes: ["Person", "Vest", "Helmet"],
       site: "Site 1",
       video_path: "0"     
+    },
+    {
+      name: "Site 2 (CCTV)",
+      prediction_classes: ["Person", "Vest","Goggles","Shoes"],
+      site: "Site 2",
+      video_path: "rtsp://admin:L23F18C4@192.168.214.191:554/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      name: "Site 2 (CCTV)",
+      prediction_classes: ["Person", "Vest"],
+      site: "Site 2",
+      video_path: "rtsp://admin:L23F18C4@192.168.214.191:554/cam/realmonitor?channel=1&subtype=0"
     }
   ]);
 
