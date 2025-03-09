@@ -45,7 +45,7 @@ Analytics & Reporting: Provides insights for workplace safety improvements.
 Provides a user-friendly interface to check reports, receive alerts, and manage safety compliance.
 
 #### Team Members:
-- Jayesh Chaudhari: Team Leader - Backend & ML Developer
+- Jayesh Chaudhari: Team Leader - FullStack & ML Developer
 - Savio Dias: Fullstack Developer and App Developer
 - Tejashree Bhangale: ML Developer
 - Devashish Jawale: Frontend Developer and ML Developer
