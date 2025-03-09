@@ -108,7 +108,7 @@ let setupMode = false;
 
 export function Avatar(props) {
   const { nodes, materials, scene } = useGLTF(
-    "/models/firegirl.glb"
+    "/models/final_model3.glb"
   );
 
   const { message, onMessagePlayed, chat } = useChat();
@@ -339,6 +339,12 @@ export function Avatar(props) {
         material={materials.Wolf3D_Hair}
         skeleton={nodes.Wolf3D_Hair.skeleton}
       />
+      <skinnedMesh
+        name="SafetyVest01"
+        geometry={nodes.SafetyVest01.geometry}
+        material={materials.kitbash_Generic_002}
+        skeleton={nodes.SafetyVest01.skeleton}
+      />
       
       
       <skinnedMesh
@@ -377,5 +383,5 @@ export function Avatar(props) {
   );
 }
 
-useGLTF.preload("/models/firgirl.glb");
+useGLTF.preload("/models/final_model3.glb");
 useGLTF.preload("/models/animations.glb");

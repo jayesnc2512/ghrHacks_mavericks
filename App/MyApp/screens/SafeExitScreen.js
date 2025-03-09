@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 
 const imageMap = {
-  'site1-fireexit2': require('../assets/site1-fireexit2.png'),
-  'site3-fireexit1': require('../assets/site3-fireexit1.png'),
+  'e203-fireexit1': require('../assets/e203-fe1.png'),
+  'e213-fireexit2': require('../assets/e213-fe2.png'),
+  'e214-fireexit1': require('../assets/e214-fe1.png'),
 };
 
 export default function SafetyExitScreen() {
-  const [source, setSource] = useState('site1');
+  const [source, setSource] = useState('e203');
   const [destination, setDestination] = useState('fireexit1');
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const places = ['site1', 'site2', 'site3', 'storagearea', 'ventilation'];
+  const places = ['e203', 'e213', 'e214'];
   const exits = ['fireexit1', 'fireexit2'];
 
   const handleScan = () => {

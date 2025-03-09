@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -11,44 +11,54 @@ import {
   Button,
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
+import { createClient } from '@supabase/supabase-js';
 
-const dummyRequests = [
-  {
-    id: '1',
-    name: 'John Doe',
-    email: 'johndoe@example.com',
-    issueType: 'Helmet',
-    description: 'Helmet strap is broken.',
-    image: 'https://imgs.search.brave.com/p9MTsJn-hHBJEak8wypQVuoDMUSzWaP9OlYXS7OrdKU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by95/ZWxsb3ctaGFyZC1w/bGFzdGljLWNvbnN0/cnVjdGlvbi1oZWxt/ZXQtd2hpdGUtYmFj/a2dyb3VuZF8xMjMy/LTMxMjEuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZA',
-    status: 'pending',
-  },
-  {
-    id: '2',
-    name: 'Jane Smith',
-    email: 'janesmith@example.com',
-    issueType: 'Gloves',
-    description: 'Gloves have a hole in them.',
-    image: 'https://imgs.search.brave.com/vmrkd_N7xXNn6fKGunMTRiSr13Oa2igREjkPSAxMN4o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93YXRlcnByb29m/LWdsb3Zlcy13aW50/ZXItc3BvcnRfMTE1/OTE5LTgwMS5qcGc_/c2VtdD1haXNfaHli/cmlk',
-    status: 'pending',
-  },
-];
+const SUPABASE_URL = 'https://hodznxjxxcynikdxvyyl.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZHpueGp4eGN5bmlrZHh2eXlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE0Njk1MjYsImV4cCI6MjA1NzA0NTUyNn0.qU5mrxx238NfhTkWuzdVFdyA3mgdlERb4tiShUkbW50'; // Replace with your actual anon key
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 export default function AdminRequests() {
-  const [requests, setRequests] = useState(dummyRequests);
+  const [requests, setRequests] = useState([]);
   const [selectedRequest, setSelectedRequest] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
+
+  useEffect(() => {
+    fetchRequests();
+  }, []);
+
+  const fetchRequests = async () => {
+    const { data, error } = await supabase
+      .from('complaints') // Replace with your actual table name
+      .select('*');
+
+    if (error) {
+      console.error('Error fetching requests:', error);
+    } else {
+      setRequests(data);
+    }
+    console.log(data);
+  };
 
   const openDetails = (request) => {
     setSelectedRequest(request);
     setModalVisible(true);
   };
 
-  const handleAction = (id, action) => {
-    setRequests((prevRequests) =>
-      prevRequests.map((req) =>
-        req.id === id ? { ...req, status: action } : req
-      )
-    );
+  const handleAction = async (id, action) => {
+    const { error } = await supabase
+      .from('complaints') 
+      .update({ status: action })
+      .eq('id', id);
+
+    if (error) {
+      console.error('Error updating status:', error);
+    } else {
+      setRequests((prevRequests) =>
+        prevRequests.map((req) =>
+          req.id === id ? { ...req, status: action } : req
+        )
+      );
+    }
     setModalVisible(false);
   };
 
@@ -73,7 +83,7 @@ export default function AdminRequests() {
                 <Text style={styles.email}>{item.email}</Text>
                 <Text style={styles.issueType}>{item.issueType}</Text>
               </View>
-              <Image source={{ uri: item.image }} style={styles.image} />
+              <Image source={{ uri: item.image_url }} style={styles.image} />
             </View>
           </TouchableOpacity>
         )}
@@ -117,7 +127,7 @@ export default function AdminRequests() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, paddingTop:60, backgroundColor: '#f8f9fa' },
+  container: { flex: 1, padding: 20, paddingTop: 60, backgroundColor : '#f8f9fa' },
   title: { fontSize: 22, fontWeight: 'bold', textAlign: 'center', marginBottom: 10 },
   
   row: {
@@ -133,7 +143,7 @@ const styles = StyleSheet.create({
   name: { fontSize: 16, fontWeight: 'bold' },
   email: { fontSize: 14, color: 'gray' },
   issueType: { fontSize: 14, fontStyle: 'italic' },
-  image: { width: 100, height: 100, borderRadius: 5,borderColor:'black',borderWidth: 2},
+  image: { width: 100, height: 100, borderRadius: 5, borderColor: 'black', borderWidth: 2 },
   
   modalContainer: {
     flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)',
