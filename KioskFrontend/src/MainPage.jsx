@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { styles } from './styles';
 import SvgComponent from './svg.js';
-import logo from "./assets/logo.png";
+import blank from "./assets/blank.png";
 import './mainPage.css';
 
 const App = ({ setLogin, user, setUser }) => {
@@ -58,7 +58,7 @@ const App = ({ setLogin, user, setUser }) => {
     }
   }, [allResponses]);
 
-  const sendLog = (async() => {
+  const sendLog = (async () => {
     const response = await fetch('http://127.0.0.1:8000/check/kiosk-log', {
       method: 'POST',
       headers: {
@@ -146,7 +146,7 @@ const App = ({ setLogin, user, setUser }) => {
       let result = await response.json();
       result = result.data[0].persons[0].safety_gear
       console.log(result);
-       
+
       setAllResponses(prevResponses => [...prevResponses, result]);
       setStatus(prevStatus => ({
         ...prevStatus,
@@ -165,8 +165,8 @@ const App = ({ setLogin, user, setUser }) => {
           setLogin(false);
           setUser({});
         }, 5000);
-      } 
-    
+      }
+
     } catch (error) {
       console.error('Error sending images to API:', error);
     }
@@ -221,9 +221,9 @@ const App = ({ setLogin, user, setUser }) => {
 
       <header style={styles.header} className='header'>
         <div>
-          <img src={logo} style={styles.logo} alt="Logo" />
+          <img src={blank} style={styles.logo} alt="Logo" />
         </div>
-        <h4 style={styles.brandname}>Shieldify.HSE</h4>
+        <h4 style={styles.brandname}>सुRakshakAI</h4>
         <div style={styles.headingsBox}>
           <h2><strong>Make sure you're wearing the proper kit</strong></h2>
           <h6 style={styles.h6}>*Proceed only if you’re cleared to go by the system</h6>

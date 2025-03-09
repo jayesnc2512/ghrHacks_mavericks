@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Report System</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.0/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Blockchain Report Storage</h1>
+        
+        <nav class="flex justify-around mb-6 border-b pb-3">
+            <button onclick="showSection('upload')" class="px-4 py-2 rounded bg-blue-500 text-white">Upload</button>
+            <button onclick="showSection('store')" class="px-4 py-2 rounded bg-green-500 text-white">Store</button>
+            <button onclick="showSection('retrieve')" class="px-4 py-2 rounded bg-purple-500 text-white">Retrieve</button>
+        </nav>
+
+        <div id="uploadSection" class="section">
+            <h3 class="text-lg font-semibold mb-2">Upload Report</h3>
+            <input type="file" id="fileInput" class="block w-full p-2 border rounded-md">
+            <button onclick="uploadToIPFS()" class="mt-2 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">Upload to IPFS</button>
+            <p id="ipfsHash" class="mt-2 text-sm text-gray-600"></p>
+        </div>
+
+        <div id="storeSection" class="section hidden">
+            <h3 class="text-lg font-semibold mb-2">Store Report on Blockchain</h3>
+            <input type="text" id="reportName" placeholder="Enter Report Name" class="w-full p-2 border rounded-md">
+            <button onclick="storeOnBlockchain()" class="mt-2 w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700">Store</button>
+            <p id="storeResult" class="mt-2 text-sm text-gray-600"></p>
+        </div>
+
+        <div id="retrieveSection" class="section hidden">
+            <h3 class="text-lg font-semibold mb-2">Retrieve Report</h3>
+            <input type="number" id="reportId" placeholder="Enter Report ID" class="w-full p-2 border rounded-md">
+            <button onclick="retrieveReport()" class="mt-2 w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700">Retrieve</button>
+            <p id="retrievedReport" class="mt-2 text-sm text-gray-600"></p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            document.querySelectorAll('.section').forEach(div => div.classList.add('hidden'));
+            document.getElementById(section + 'Section').classList.remove('hidden');
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

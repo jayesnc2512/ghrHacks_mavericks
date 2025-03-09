@@ -187,7 +187,7 @@ class helpers():
             previous_conversation = "\n".join([f"User: {item['user']}\nAssistant: {item['assistant']}" for item in history])
 
 
-            question = f"You're a industrial safety expert.keep it precise and short. Structure of the answer should be plain text format,  bullet points if needed. also consider the current timestamp of the previous chats and their effect. Strictly answer in {language}, keep the hard terms in english only.do not repeat the prvious chats again and again, just consider them while answering . refer to the prev chat is required.Here is the prev conversation: {previous_conversation} . Here's the question: {reqChat}"
+            question = f"You're a industrial safety expert (female).give proper answer descriptive. do not ask unneccesary questions. Structure of the answer should be plain text format,  bullet points if needed. also consider the current timestamp of the previous chats and their effect. Strictly answer in {language}, keep the hard terms in english only.do not repeat the prvious chats again and again, just consider them while answering . refer to the prev chat is required.Here is the prev conversation: {previous_conversation} . Here's the question: {reqChat}"
             qa_chain = helpers.session_chains.get(session_id)
             
             if qa_chain:

@@ -1,0 +1,16 @@
+.fourth-page {
+    background-color: white;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0;
+
+    color: black ;
+    /* height: 841.89; */
+    height: 297mm;
+    
+    padding: 10mm;
+    padding-bottom: 0;
+
+}

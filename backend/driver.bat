@@ -1,5 +1,5 @@
 @echo off
 cd /d "%~dp0"
-call venv\Scripts\activate
+call venv2\Scripts\activate
 python app\helpers\drowsiness.py
 pause

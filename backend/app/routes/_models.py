@@ -42,6 +42,10 @@ class checkImages(BaseModel):
     empID: str
     images: List[str]
 
+class faceImages(BaseModel):
+    images: List[str]
+
+
 
 class LogDetails(BaseModel):
     gloves: bool

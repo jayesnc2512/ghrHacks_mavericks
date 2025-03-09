@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Body
-from ._models import checkImages,KioskLog
+from ._models import checkImages,KioskLog,faceImages
 import base64
 from app.DB.mongodb import mongodb_client
 from pymongo.errors import PyMongoError
@@ -16,6 +16,10 @@ router = APIRouter()
 async def checkImages(body: checkImages):
     try:
         result = await checkController.checkImages(body.empID, body.images)
+        kiosk_logs_collection = mongodb_client.get_collection("kioskLogs")
+        if isinstance(result, dict):
+            kiosk_logs_collection.insert_one(result)
+        
         if result:
             return {"message": "Image uploaded successfully", "status": 200, "data": result}
         else:
@@ -26,9 +30,9 @@ async def checkImages(body: checkImages):
     
 
 @router.post("/face-detect")
-async def checkImages(body: checkImages):
+async def checkImages(body: faceImages):
     try:
-        result = checkController.faceDetect(body.empID, body.images)
+        result = checkController.faceDetect(body.images)
         if result:
             return {"message": "Image uploaded successfully", "status": 200, "data": result}
         else:

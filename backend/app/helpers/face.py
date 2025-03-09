@@ -7,6 +7,9 @@ from collections import Counter
 from sklearn.preprocessing import Normalizer
 from deepface import DeepFace
 
+import base64
+from io import BytesIO
+
 # Define paths
 EMBEDDING_FILE = "app/helpers/model/face_embeddings.pkl"
 SAVED_FACES_DIR = "app/helpers/model/Saved_faces"
@@ -129,8 +132,36 @@ def detect_face_until_known(video_capture, duration=5):
         else:
             print("🔄 No known face detected. Retrying...")
 
-# Function to detect face and return name along with processed frame
+def base64_to_image(base64_string):
+    """Convert Base64 string to a NumPy image array"""
+    try:
+        # Remove metadata (e.g., "data:image/png;base64,")
+        base64_data = base64_string.split(",")[1] if "," in base64_string else base64_string
+        
+        # Decode Base64
+        image_data = base64.b64decode(base64_data)
+        np_arr = np.frombuffer(image_data, np.uint8)
+
+        # Convert to OpenCV format
+        img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+        
+        if img is None:
+            raise ValueError("⚠️ Decoded image is None!")
+        
+        return img
+    except Exception as e:
+        print(f"⚠️ Error decoding Base64 image: {e}")
+        return None
+
+
 def detect_face(frame):
+    if frame is None:
+        print("⚠️ Error: Empty frame received!")
+        return "Unknown", None
+    
+    if frame.shape[-1] == 4:  # Handle RGBA PNGs
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
+    
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
@@ -159,7 +190,7 @@ def detect_face(frame):
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         cv2.putText(frame, detected_name, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
-    return detected_name, frame
+    return detected_name
 
 # Start webcam and continuously recognize until a known face is detected
 # video_capture = cv2.VideoCapture(0)

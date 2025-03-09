@@ -6,7 +6,7 @@ import Navbar from 'components/navbar/NavbarAdmin.js';
 import Sidebar from 'components/sidebar/Sidebar.js';
 import { SidebarContext } from 'contexts/SidebarContext';
 import React, { useState } from 'react';
-import { Navigate, Route, Routes,useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import routes from 'routes.js';
 
 // Custom Chakra theme
@@ -22,7 +22,7 @@ export default function Dashboard(props) {
     return window.location.pathname !== '/admin/full-screen-maps';
   };
   const getActiveRoute = (routes) => {
-    if(routes.name === 'Sign In')  return false;
+    if (routes.name === 'Sign In') return false;
     let activeRoute = 'Dashboard Manager';
     for (let i = 0; i < routes.length; i++) {
       if (routes[i].collapse) {
@@ -46,7 +46,7 @@ export default function Dashboard(props) {
     return activeRoute;
   };
   const getActiveNavbar = (routes) => {
-    if(routes.name === 'Sign In')  return false;
+    if (routes.name === 'Sign In') return false;
     let activeNavbar = false;
     for (let i = 0; i < routes.length; i++) {
       if (routes[i].collapse) {
@@ -70,7 +70,7 @@ export default function Dashboard(props) {
     return activeNavbar;
   };
   const getActiveNavbarText = (routes) => {
-    if(routes.name === 'Sign In')  return false;
+    if (routes.name === 'Sign In') return false;
     let activeNavbar = false;
     for (let i = 0; i < routes.length; i++) {
       if (routes[i].collapse) {
@@ -139,21 +139,21 @@ export default function Dashboard(props) {
             transitionProperty="top, bottom, width"
             transitionTimingFunction="linear, linear, ease"
           >
-          {!hideSidebar && (
+            {!hideSidebar && (
               <Portal>
-              <Box>
-                <Navbar
-                  onOpen={onOpen}
-                  logoText={'HSE Shieldify'}
-                  brandText={getActiveRoute(routes)}
-                  secondary={getActiveNavbar(routes)}
-                  message={getActiveNavbarText(routes)}
-                  fixed={fixed}
-                  {...rest}
-                />
-              </Box>
-            </Portal>                      
-          )}
+                <Box>
+                  <Navbar
+                    onOpen={onOpen}
+                    logoText={'सुRakshakAI'}
+                    brandText={getActiveRoute(routes)}
+                    secondary={getActiveNavbar(routes)}
+                    message={getActiveNavbarText(routes)}
+                    fixed={fixed}
+                    {...rest}
+                  />
+                </Box>
+              </Portal>
+            )}
 
 
             {getRoute() ? (

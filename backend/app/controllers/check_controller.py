@@ -7,7 +7,7 @@ from pymongo.errors import PyMongoError
 from ..helpers.model.checkImage import detect_safety_gear
 from ..helpers.modelAPI import ModelAPI
 import base64
-from ..helpers.face import detect_face
+from ..helpers.face import detect_face,base64_to_image
 
 
 
@@ -37,7 +37,7 @@ class checkController:
             print(f"Error saving images: {e}")
             return None
         
-    def faceDetect(empId, images):
+    def faceDetect(images):
         try:
             saved_images = []
             for idx, image_base64 in enumerate(images):
@@ -50,8 +50,12 @@ class checkController:
                 #     saved_images.append(image_path)
             
             # Call the asynchronous function properly using await
-            detection_results1 = detect_face(images[0])
-            detection_results2 = detect_face(images[1])
+            image1=base64_to_image(images[0])
+            image2=base64_to_image(images[1])
+
+            detection_results1 = detect_face(image1)
+            detection_results2 = detect_face(image2)
+
 
             
             return [detection_results1, detection_results2]

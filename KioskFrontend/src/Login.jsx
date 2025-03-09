@@ -151,7 +151,7 @@ const Login = ({ setLogin, setUser, user }) => {
         }
     };
 
-    const handleLoginUsingFace = async () => {
+    const handleLoginUsingFace = async (us,pas) => {
         // Prevent default form submission behavior
 
         try {
@@ -160,7 +160,7 @@ const Login = ({ setLogin, setUser, user }) => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ empID, password }),
+                body: JSON.stringify({ empID:us, password:pas }),
             });
 
             if (response.ok) {
@@ -211,7 +211,11 @@ const Login = ({ setLogin, setUser, user }) => {
     }, [countdown]);
 
     useEffect(() => {
-        if (response) {
+        if (response.includes("jayesh")) {
+            stopCamera();
+
+        }
+        if (response.includes("tejashree")) {
             stopCamera();
         }
     }, [response]);
@@ -241,6 +245,8 @@ const Login = ({ setLogin, setUser, user }) => {
         let intervalId;
 
         const captureFrames = async () => {
+            if (!videoRef.current) return;
+
             if (captures >= 5) {
                 clearInterval(intervalId);
                 return;
@@ -287,17 +293,19 @@ const Login = ({ setLogin, setUser, user }) => {
             let result = await response.json();
             result = result.data
             console.log(result);
-            setResponse(response);
-            if (result.include("jayesh")) {
+            setResponse(result);
+            if (result.includes("jayesh")) {
+                await stopCamera();
                 setempID("emp001");
                 setPassword("emp001");
-                handleLoginUsingFace();
+                handleLoginUsingFace("emp001", "emp001");
 
             }
-            if (result.include("tejashree")) {
+            if (result.includes("tejashree")) {
+                await stopCamera();
                 setempID("emp002");
                 setPassword("emp002")
-                handleLoginUsingFace();
+                handleLoginUsingFace("emp002", "emp002");
             }
 
         } catch (error) {

@@ -17,6 +17,8 @@ import CctvLogs from "views/admin/cctvLogs"
 import CctvMonitor from 'views/admin/cctvMonitoring';
 import Chat from "./views/admin/chatbot"
 import Tutorial from 'views/admin/tutorials';
+import Report from "views/admin/default/Report";
+import Dapp from "views/admin/blockchain";
 
 // Auth Imports
 import SignInCentered from 'views/auth/signIn';
@@ -69,7 +71,7 @@ const routes = [
     name: 'CCTV Logs',
     layout: '/admin',
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
-    path: '/cctv_logs',
+    path: '/cctvlogs',
     component: <CctvLogs />,
   },
   
@@ -86,6 +88,20 @@ const routes = [
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: '/yt-tutorials',
     component: <Tutorial />,
+  },
+  {
+    name: 'Report',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/report',
+    component: <Report />,
+  },
+  {
+    name: 'Dcentralized storage',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/blockchain',
+    component: <Dapp />,
   },
 ];
 

@@ -13,6 +13,7 @@ import {
 import initialTheme from './theme/theme'; //  { themeGreen }
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import Report from "./views/admin/default/Report"
 
 // Chakra imports
 /* <Route path="/admin/Rooms" element={<RoomPage />} /> */
@@ -71,6 +72,8 @@ export default function Main() {
           }
         />
         <Route path="/" element={<Navigate to="/admin" replace />} />
+        <Route path="/report" element={Report} />
+
       </Routes>
       
     </ChakraProvider>

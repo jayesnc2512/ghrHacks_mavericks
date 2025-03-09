@@ -223,7 +223,7 @@ const App = ({ setLogin, user, setUser }) => {
                 <div>
                     <img src={logo} style={styles.logo} alt="Logo" />
                 </div>
-                <h4 style={styles.brandname}>Shieldify.HSE</h4>
+                <h4 style={styles.brandname}>सुRakshakAI </h4>
                 <div style={styles.headingsBox}>
                     <h2><strong>Make sure you're wearing the proper kit</strong></h2>
                     <h6 style={styles.h6}>*Proceed only if you’re cleared to go by the system</h6>
